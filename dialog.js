@@ -36,12 +36,12 @@
                     <input type="checkbox" id="toggleFeatureTwo" style="margin-right:6px; vertical-align:middle;">
                     Bật Đào
                 </label>
-            </div>
-            <div id="landTableContainer" style="margin-top: 12px; max-height: 700px; overflow-y: auto; width: 500px;"></div>
-        `;
-
+            </div>`;
+       
         document.body.appendChild(container);
-
+         container.innerHTML = `<div id="landTableContainer" style="position: fixed;/* bottom: 0; */right: 20px;background: rgb(34, 34, 34);color: white;padding: 8px 12px;border-radius: 6px;font-family: Arial, sans-serif;font-size: 14px;z-index: 9998;user-select: none;box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 6px;overflow-y: auto;height: 800px;width: 600px;"></div>
+        `;
+ document.body.appendChild(container);
         const toggleOne = container.querySelector('#toggleFeatureOne');
         const toggleTwo = container.querySelector('#toggleFeatureTwo');
 
