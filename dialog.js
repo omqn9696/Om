@@ -28,16 +28,16 @@
             <div style="margin-bottom: 8px;">
                 <label style="cursor:pointer; display:flex; align-items:center;">
                     <input type="checkbox" id="toggleFeatureOne" style="margin-right:6px; vertical-align:middle;">
-                    Timers API
+                    Bật Nhận
                 </label>
             </div>
             <div>
                 <label style="cursor:pointer; display:flex; align-items:center;">
                     <input type="checkbox" id="toggleFeatureTwo" style="margin-right:6px; vertical-align:middle;">
-                    Ent Mine API
+                    Bật Đào
                 </label>
             </div>
-            <div id="landTableContainer" style="margin-top: 12px; max-height: 300px; overflow-y: auto;"></div>
+            <div id="landTableContainer" style="margin-top: 12px; max-height: 700px; overflow-y: auto;"></div>
         `;
 
         document.body.appendChild(container);
