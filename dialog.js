@@ -37,7 +37,7 @@
                     Bật Đào
                 </label>
             </div>
-            <div id="landTableContainer" style="margin-top: 12px; max-height: 700px; overflow-y: auto;"></div>
+            <div id="landTableContainer" style="margin-top: 12px; max-height: 700px; overflow-y: auto; width: 500px;"></div>
         `;
 
         document.body.appendChild(container);
@@ -112,7 +112,7 @@
         width: 100%;
         border-collapse: collapse;
         color: white;
-        font-size: 12px;
+        font-size: 16px;
     `;
 
     // Tạo header
@@ -160,7 +160,7 @@
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td style="padding: 0px; border: 1px solid #444; text-align: left;" onclick="window.setInputValue('${cleanLandName}')">
-                        <button style="background: #007bff; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer;"
+                        <button style="background: #007bff; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer;width: 100%;"
                                 >Land ${cleanLandName}</button>
                     </td>
                     <td style="padding: 6px; border: 1px solid #444; text-align: center;">
