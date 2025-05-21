@@ -10,7 +10,7 @@
 
 (function () {
     'use strict';
-
+    const w = (typeof unsafeWindow !== 'undefined') ? unsafeWindow : window;
     const TELEGRAM_BOT_TOKEN = '7497533128:AAHnXF8-ASqxV3F23IpYsAW94Bl33I9nG7E';
     const TELEGRAM_CHAT_ID = '-1002593215567';
 
