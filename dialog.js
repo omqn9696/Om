@@ -1,3 +1,112 @@
+// ==UserScript==
+// @name         Pixels - Notify Pixel Tasks on Open & Changes
+// @namespace    http://tampermonkey.net/
+// @version      1.4
+// @description  Gửi thông báo pixel lần đầu mở bảng và theo dõi thay đổi tiếp tục, không thay đổi taskBoard.items
+// @author       Ốm.AI
+// @match        *://play.pixels.xyz/*
+// @grant        unsafeWindow
+// ==/UserScript==
+
+(function () {
+    'use strict';
+
+    const TELEGRAM_BOT_TOKEN = '7497533128:AAHnXF8-ASqxV3F23IpYsAW94Bl33I9nG7E';
+    const TELEGRAM_CHAT_ID = '-1002593215567';
+
+    const sendPhotoToTelegram = async (photoUrl, caption) => {
+        try {
+            await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, photo: photoUrl, caption: caption })
+            });
+        } catch (err) {
+            console.error('[TASK TRACKER] Lỗi gửi ảnh Telegram:', err);
+        }
+    };
+
+    const formatCaption = (task) =>
+        `💸💸💸 ${task.reward.quantity} 💎\n` +
+        `${task.taskItem.name} x${task.taskItem.quantity}\n` +
+        `Skill: ${task.requiredSkill.type}`;
+
+    let lastJson = '';
+    let intervalId = null;
+    let hasSentInitial = false;
+
+    const processTasks = (items) => {
+        for (const task of items) {
+            if (task.reward?.type === 'pixel') {
+                sendPhotoToTelegram(task.taskItem.icon, formatCaption(task));
+            }
+        }
+    };
+
+    const startWatchingTasks = () => {
+        if (intervalId) return;
+        //console.log('[TASK TRACKER] Bắt đầu theo dõi taskBoard.items');
+
+        intervalId = setInterval(() => {
+            const items = unsafeWindow?.pga?.store?.taskBoard?.items;
+            if (Array.isArray(items)) {
+                const currentJson = JSON.stringify(items);
+                if (currentJson !== lastJson) {
+                    // Chỉ gửi lần đầu mở nếu chưa gửi
+                    if (!hasSentInitial) {
+                        //console.log('[TASK TRACKER] Lần đầu có dữ liệu, gửi các task pixel hiện tại');
+                        processTasks(items);
+                        hasSentInitial = true;
+                    } else {
+                        // Lọc ra các task pixel mới hoặc khác so với trước
+                        try {
+                            const oldItems = JSON.parse(lastJson);
+                            const oldIds = new Set(oldItems.map(t => t.taskItem.id + '_' + t.reward.quantity));
+                            for (const task of items) {
+                                if (task.reward?.type === 'pixel') {
+                                    const key = task.taskItem.id + '_' + task.reward.quantity;
+                                    if (!oldIds.has(key)) {
+                                        sendPhotoToTelegram(task.taskItem.icon, formatCaption(task));
+                                    }
+                                }
+                            }
+                        } catch {
+                            // Nếu parse lỗi thì fallback gửi hết
+                            processTasks(items);
+                        }
+                    }
+                    lastJson = currentJson;
+                }
+            }
+        }, 1000);
+    };
+
+    const stopWatchingTasks = () => {
+        if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = null;
+            lastJson = '';
+            hasSentInitial = false;
+            //console.log('[TASK TRACKER] Ngừng theo dõi taskBoard.items');
+        }
+    };
+
+    const observeForSellPanel = () => {
+        const observer = new MutationObserver(() => {
+            const sellPanel = document.querySelector('.Store_sell-content-wrapper__MsAMm.commons_scrollArea__dCnqw');
+            if (sellPanel) {
+                startWatchingTasks();
+            } else {
+                stopWatchingTasks();
+            }
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+    };
+
+    observeForSellPanel();
+})();
+
 (function() {
     'use strict';
 
