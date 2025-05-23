@@ -28,25 +28,7 @@
         `${task.taskItem.name} x${task.taskItem.quantity}\n` +
         `Skill: ${task.requiredSkill.type}`;
 
-    // Chỉ lưu taskItem.id đã từng gửi
     const sentTaskItemIds = new Set();
-
-    const scanInitialPixelTasks = (items) => {
-        for (const task of items) {
-            if (
-                task?.reward?.type === 'pixel' &&
-                task?.taskItem?.id &&
-                task?.taskItem?.icon &&
-                task?.requiredSkill
-            ) {
-                const id = task.taskItem.id;
-                if (!sentTaskItemIds.has(id)) {
-                    sentTaskItemIds.add(id);
-                    sendPhotoToTelegram(task.taskItem.icon, formatCaption(task));
-                }
-            }
-        }
-    };
 
     const processTasks = (items) => {
         for (const task of items) {
@@ -66,16 +48,21 @@
     };
 
     let intervalId = null;
+    let enabled = false;
 
     const startWatchingTasks = () => {
         if (intervalId) return;
 
         intervalId = setInterval(() => {
+            if (!enabled) return;
             const items = w?.pga?.store?.taskBoard?.items;
             if (!Array.isArray(items)) return;
 
             const hasFullTasks = items.some(
-                (task) => task?.reward?.type === 'pixel' && task?.taskItem?.id && task?.requiredSkill
+                (task) =>
+                    task?.reward?.type === 'pixel' &&
+                    task?.taskItem?.id &&
+                    task?.requiredSkill
             );
             if (!hasFullTasks) return;
 
@@ -96,11 +83,9 @@
             const taskPanel = document.querySelector('.Store_sell-content-wrapper__MsAMm.commons_scrollArea__dCnqw');
             const items = w?.pga?.store?.taskBoard?.items;
 
-            if (taskPanel && Array.isArray(items)) {
+            if (taskPanel && Array.isArray(items) && enabled) {
                 console.log('[TASK TRACKER] 🟢 Mở bảng task');
-
-                // Gửi toàn bộ pixel task hiện có (chỉ 1 lần theo id)
-                scanInitialPixelTasks(items);
+                processTasks(items);
                 startWatchingTasks();
             } else {
                 stopWatchingTasks();
@@ -110,6 +95,32 @@
         observer.observe(document.body, { childList: true, subtree: true });
     };
 
+    const createToggleButton = () => {
+        const button = document.createElement('button');
+        button.textContent = '🔁 Roll';
+        button.style.position = 'fixed';
+        button.style.bottom = '20px';
+        button.style.left = '20px';
+        button.style.zIndex = '9999';
+        button.style.padding = '10px 16px';
+        button.style.backgroundColor = '#3b82f6';
+        button.style.color = '#fff';
+        button.style.border = 'none';
+        button.style.borderRadius = '8px';
+        button.style.cursor = 'pointer';
+        button.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
+
+        button.addEventListener('click', () => {
+            enabled = !enabled;
+            button.style.backgroundColor = enabled ? '#16a34a' : '#3b82f6';
+            button.textContent = enabled ? '🟢 Roll (ON)' : '🔁 Roll (OFF)';
+            console.log('[TASK TRACKER] Trạng thái:', enabled ? 'BẬT' : 'TẮT');
+        });
+
+        document.body.appendChild(button);
+    };
+
+    createToggleButton();
     observeForTaskPanel();
 })();
 (function() {
