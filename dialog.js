@@ -1,218 +1,229 @@
 (function () {
     'use strict';
 
-    const w = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
+    // State management
+    let featureOneEnabled = false; // API timers
+    let featureTwoEnabled = false; // API ent_mine_04
+    let currentLands = [];
+    let updateInterval = null;
+    let taskInterval = null;
+    let enabled = false;
 
+    // Constants
     const TELEGRAM_BOT_TOKEN = '7497533128:AAHnXF8-ASqxV3F23IpYsAW94Bl33I9nG7E';
     const TELEGRAM_CHAT_ID = '-1002593215567';
+    const BLACKLIST_LAND_IDS = ['2689'];
+    const WINDOW = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
 
+    // Utility Functions
     const sendPhotoToTelegram = async (photoUrl, caption) => {
         try {
             await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    chat_id: TELEGRAM_CHAT_ID,
-                    photo: photoUrl,
-                    caption: caption,
-                }),
+                body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, photo: photoUrl, caption })
             });
-            console.log('[TASK TRACKER] ✅ Đã gửi:', caption);
         } catch (err) {
-            console.error('[TASK TRACKER] ❌ Lỗi gửi Telegram:', err);
+           // console.error('Telegram send error:', err);
         }
     };
 
     const formatCaption = (task) =>
-        `💸💸💸 ${task.reward.quantity} 💎\n` +
-        `${task.taskItem.name} x${task.taskItem.quantity}\n` +
-        `Skill: ${task.requiredSkill.type}`;
+        `💸💸💸 ${task.reward.quantity} 💎\n${task.taskItem.name} x${task.taskItem.quantity}\nSkill: ${task.requiredSkill.type}`;
 
-    // Chỉ lưu taskItem.id đã từng gửi
     const sentTaskItemIds = new Set();
 
-    const scanInitialPixelTasks = (items) => {
-        for (const task of items) {
-            if (
-                task?.reward?.type === 'pixel' &&
-                task?.taskItem?.id &&
-                task?.taskItem?.icon &&
-                task?.requiredSkill
-            ) {
-                const id = task.taskItem.id;
-                if (!sentTaskItemIds.has(id)) {
-                    sentTaskItemIds.add(id);
-                    sendPhotoToTelegram(task.taskItem.icon, formatCaption(task));
-                }
-            }
-        }
-    };
-
+    // Task Processing
     const processTasks = (items) => {
+        if (!Array.isArray(items)) return;
         for (const task of items) {
-            if (
-                task?.reward?.type === 'pixel' &&
-                task?.taskItem?.id &&
-                task?.taskItem?.icon &&
-                task?.requiredSkill
-            ) {
-                const id = task.taskItem.id;
-                if (!sentTaskItemIds.has(id)) {
-                    sentTaskItemIds.add(id);
+            if (task?.reward?.type === 'pixel' && task?.taskItem?.id && task?.taskItem?.icon && task?.requiredSkill) {
+                if (!sentTaskItemIds.has(task.taskItem.id)) {
+                    sentTaskItemIds.add(task.taskItem.id);
                     sendPhotoToTelegram(task.taskItem.icon, formatCaption(task));
                 }
             }
         }
     };
-
-    let intervalId = null;
 
     const startWatchingTasks = () => {
-        if (intervalId) return;
-
-        intervalId = setInterval(() => {
-            const items = w?.pga?.store?.taskBoard?.items;
-            if (!Array.isArray(items)) return;
-
-            const hasFullTasks = items.some(
-                (task) => task?.reward?.type === 'pixel' && task?.taskItem?.id && task?.requiredSkill
-            );
-            if (!hasFullTasks) return;
-
+        if (taskInterval) return;
+        taskInterval = setInterval(() => {
+            if (!enabled) return;
+            const items = WINDOW?.pga?.store?.taskBoard?.items;
+            if (!Array.isArray(items) || !items.some(task => task?.reward?.type === 'pixel' && task?.taskItem?.id && task?.requiredSkill)) return;
             processTasks(items);
         }, 1000);
     };
 
     const stopWatchingTasks = () => {
-        if (intervalId) {
-            clearInterval(intervalId);
-            intervalId = null;
-            console.log('[TASK TRACKER] 🛑 Dừng theo dõi task');
+        if (taskInterval) {
+            clearInterval(taskInterval);
+            taskInterval = null;
         }
     };
 
     const observeForTaskPanel = () => {
         const observer = new MutationObserver(() => {
             const taskPanel = document.querySelector('.Store_sell-content-wrapper__MsAMm.commons_scrollArea__dCnqw');
-            const items = w?.pga?.store?.taskBoard?.items;
-
-            if (taskPanel && Array.isArray(items)) {
-                console.log('[TASK TRACKER] 🟢 Mở bảng task');
-
-                // Gửi toàn bộ pixel task hiện có (chỉ 1 lần theo id)
-                scanInitialPixelTasks(items);
+            const items = WINDOW?.pga?.store?.taskBoard?.items;
+            if (taskPanel && Array.isArray(items) && enabled) {
+                processTasks(items);
                 startWatchingTasks();
             } else {
                 stopWatchingTasks();
             }
         });
-
         observer.observe(document.body, { childList: true, subtree: true });
     };
 
-    observeForTaskPanel();
-})();
-(function() {
-    'use strict';
+    // UI Creation
+    const createToggleButton = () => {
+        const button = document.createElement('button');
+        Object.assign(button.style, {
+            position: 'fixed', bottom: '20px', left: '20px', zIndex: '9999',
+            padding: '10px 16px', backgroundColor: '#3b82f6', color: '#fff',
+            border: 'none', borderRadius: '8px', cursor: 'pointer',
+            boxShadow: '0 4px 8px rgba(0,0,0,0.3)', fontWeight: 'bold',
+            transition: 'transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease',
+            outline: 'none'
+        });
+        button.textContent = '💎';
+        button.addEventListener('mouseenter', () => {
+            button.style.transform = 'scale(1.05)';
+            button.style.boxShadow = '0 6px 12px rgba(0,0,0,0.4)';
+        });
+        button.addEventListener('mouseleave', () => {
+            button.style.transform = 'scale(1)';
+            button.style.boxShadow = '0 4px 8px rgba(0,0,0,0.3)';
+        });
+        button.addEventListener('mousedown', () => {
+            button.style.transform = 'scale(0.95)';
+        });
+        button.addEventListener('mouseup', () => {
+            button.style.transform = 'scale(1.05)';
+        });
+        button.addEventListener('focus', () => {
+            button.style.outline = '2px solid #fff';
+        });
+        button.addEventListener('blur', () => {
+            button.style.outline = 'none';
+        });
+        button.addEventListener('click', () => {
+            enabled = !enabled;
+            button.style.backgroundColor = enabled ? '#16a34a' : '#3b82f6';
+            button.textContent = enabled ? '💎' : '💎';
+            const mineBtn = document.getElementById('minebtn');
+            if (enabled && mineBtn) {
+                mineBtn.remove();
+                featureOneEnabled = false;
+                featureTwoEnabled = false;
+            } else if (!enabled && !mineBtn) {
+                createToggleUI();
+            }
+        });
+        document.body.appendChild(button);
+    };
 
-    let featureOneEnabled = false; // Tính năng 1 (API timers)
-    let featureTwoEnabled = false; // Tính năng 2 (API ent_mine_04)
-    let currentLands = []; // Lưu danh sách land để đếm ngược
-    let updateInterval = null; // Interval cho đếm ngược
-
-    // Tạo hộp thoại toggle và container cho bảng
-    function createToggleUI() {
+    const createToggleUI = () => {
         const container = document.createElement('div');
-        container.style.cssText = `
-            position: fixed;
-            bottom: 70px;
-            right: 20px;
-            background: #222;
-            color: white;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            z-index: 9999;
-            user-select: none;
-            box-shadow: 0 0 6px rgba(0,0,0,0.5);
-        `;
-
+        container.id = 'minebtn';
+        Object.assign(container.style, {
+            position: 'fixed', bottom: '70px', right: '20px', background: '#222',
+            color: 'white', padding: '12px 16px', borderRadius: '8px', fontFamily: 'Arial, sans-serif',
+            fontSize: '14px', zIndex: '9999', userSelect: 'none', boxShadow: '0 0 8px rgba(0,0,0,0.5)',
+            width: '150px', transition: 'width 0.3s ease'
+        });
         container.innerHTML = `
-            <div style="margin-bottom: 8px;">
-                <label style="cursor:pointer; display:flex; align-items:center;">
-                    <input type="checkbox" id="toggleFeatureOne" style="margin-right:6px; vertical-align:middle;">
-                    Bật Nhận
-                </label>
-            </div>
-            <div>
-                <label style="cursor:pointer; display:flex; align-items:center;">
-                    <input type="checkbox" id="toggleFeatureTwo" style="margin-right:6px; vertical-align:middle;">
-                    Bật Đào
-                </label>
-            </div>
+            <style>
+                .icon-button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 auto 8px auto;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 20px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease, filter 0.2s ease;
+                    outline: none;
+                }
+                .icon-button.off {
+                    background-color: #3b82f6;
+                    filter: grayscale(70%);
+                }
+                .icon-button.on {
+                    background-color: #16a34a;
+                    filter: none;
+                }
+                .icon-button:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+                }
+                .icon-button:active {
+                    transform: scale(0.95);
+                }
+                .icon-button:focus {
+                    outline: 2px solid #fff;
+                    outline-offset: 2px;
+                }
+            </style>
+            <button id="toggleFeatureOne" class="icon-button off" title="Toggle Nhận">🎁</button>
+            <button id="toggleFeatureTwo" class="icon-button off" title="Toggle Đào">⛏️</button>
             <div id="landTableContainer" style="margin-top: 12px; max-height: 700px; overflow-y: auto; width: 500px;"></div>
         `;
-
         document.body.appendChild(container);
 
         const toggleOne = container.querySelector('#toggleFeatureOne');
         const toggleTwo = container.querySelector('#toggleFeatureTwo');
 
-        toggleOne.addEventListener('change', (e) => {
-            if (e.target.checked && featureTwoEnabled) {
-                toggleTwo.checked = false;
+        toggleOne.addEventListener('click', () => {
+            featureOneEnabled = !featureOneEnabled;
+            if (featureOneEnabled && featureTwoEnabled) {
                 featureTwoEnabled = false;
-                clearTable();
+                toggleTwo.classList.remove('on');
+                toggleTwo.classList.add('off');
             }
-            featureOneEnabled = e.target.checked;
-            console.log('Tính năng Timers API:', featureOneEnabled ? 'Bật' : 'Tắt');
+            toggleOne.classList.toggle('on', featureOneEnabled);
+            toggleOne.classList.toggle('off', !featureOneEnabled);
         });
 
-        toggleTwo.addEventListener('change', (e) => {
-            if (e.target.checked && featureOneEnabled) {
-                toggleOne.checked = false;
+        toggleTwo.addEventListener('click', () => {
+            featureTwoEnabled = !featureTwoEnabled;
+            if (featureTwoEnabled && featureOneEnabled) {
                 featureOneEnabled = false;
+                toggleOne.classList.remove('on');
+                toggleOne.classList.add('off');
             }
-            featureTwoEnabled = e.target.checked;
+            toggleTwo.classList.toggle('on', featureTwoEnabled);
+            toggleTwo.classList.toggle('off', !featureTwoEnabled);
             if (!featureTwoEnabled) clearTable();
-            console.log('Tính năng Ent Mine API:', featureTwoEnabled ? 'Bật' : 'Tắt');
         });
-    }
+    };
 
-    // Chuyển đổi shortestWaiting sang định dạng mm:ss
-    function getTimeFromShortestWaiting(shortestWaiting) {
-        const giayTong = Math.floor(shortestWaiting / 1000); // Chuyển mili-giây thành giây
-        const phut = Math.floor(giayTong / 60); // Tính số phút
-        const giay = giayTong % 60; // Tính số giây còn lại
+    // Table Rendering
+    const getTimeFromShortestWaiting = (shortestWaiting) => {
+        const totalSeconds = Math.floor(shortestWaiting / 1000);
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        return minutes > 0 ? `${minutes}m ${seconds}s` : `${seconds}s`;
+    };
 
-        let result = '';
-        if (phut > 0) {
-            result += `${phut}m/`;
+    const renderLandTable = (data) => {
+        const tableContainer = document.getElementById('landTableContainer');
+        if (!tableContainer) return;
+
+        const container = document.getElementById('minebtn');
+        if (container) {
+            container.style.width = '500px'; // Expand to match table width
         }
-        if (giay > 0 || phut === 0) { // Hiển thị giây ngay cả khi là 0, trừ khi có phút
-            result += `${giay}s`;
-        }
 
-        return result.trim(); // Loại bỏ khoảng trắng thừa
-    }
-
-    // Tạo và cập nhật bảng hiển thị (nút Land {landName}, loại bỏ shortestWaiting = 0, đếm ngược)
-    function renderLandTable(data) {
-    const tableContainer = document.getElementById('landTableContainer');
-    if (!tableContainer) return;
-
-    const now = Date.now();
-
-    // Danh sách land cần loại bỏ
-    const blacklistLandIds = ['2689'];
-
-    currentLands = (data?.[0]?.public?.filter(land => {
-        const landName = land.landName.replace('pixelsNFTFarm-', '');
-        return land.shortestWaiting > 0 && !blacklistLandIds.includes(landName);
-    }) || [])
-        .slice(0, 50)
-        .map(land => ({
+        const now = Date.now();
+        currentLands = (data?.[0]?.public?.filter(land =>
+            land.shortestWaiting > 0 && !BLACKLIST_LAND_IDS.includes(land.landName.replace('pixelsNFTFarm-', ''))
+        ) || []).slice(0, 50).map(land => ({
             landName: land.landName,
             numberOfEntities: land.numberOfEntities,
             numberOfAvailableEntities: land.numberOfAvailableEntities,
@@ -220,183 +231,123 @@
             startTime: now
         }));
 
-    // Tạo bảng
-    const table = document.createElement('table');
-    table.style.cssText = `
-        width: 100%;
-        border-collapse: collapse;
-        color: white;
-        font-size: 16px;
-    `;
+        const table = document.createElement('table');
+        Object.assign(table.style, { width: '100%', borderCollapse: 'collapse', color: 'white', fontSize: '16px' });
+        table.innerHTML = `
+            <thead>
+                <tr style="background: #333;">
+                    <th style="padding: 6px; border: 1px solid #444;">Land</th>
+                    <th style="padding: 6px; border: 1px solid #444;">Available|Total Entities</th>
+                    <th style="padding: 6px; border: 1px solid #444;">Shortest Waiting</th>
+                </tr>
+            </thead>
+        `;
+        updateLandTable(table);
+        tableContainer.innerHTML = '';
+        tableContainer.appendChild(table);
 
-    // Tạo header
-    const thead = document.createElement('thead');
-    thead.innerHTML = `
-        <tr style="background: #333;">
-            <th style="padding: 6px; border: 1px solid #444;">Land</th>
-            <th style="padding: 6px; border: 1px solid #444;">Available|Total Entities</th>
-            <th style="padding: 6px; border: 1px solid #444;">Shortest Waiting</th>
-        </tr>
-    `;
-    table.appendChild(thead);
+        if (currentLands.length && !updateInterval) {
+            updateInterval = setInterval(() => updateLandTable(table), 1000);
+        }
+    };
 
-    // Tạo body
-    updateLandTable(table);
-
-    tableContainer.innerHTML = '';
-    tableContainer.appendChild(table);
-
-    // Bắt đầu interval để cập nhật đếm ngược
-    if (currentLands.length && !updateInterval) {
-        updateInterval = setInterval(() => {
-            updateLandTable(table);
-        }, 1000);
-    }
-}
-
-    // Cập nhật bảng với thời gian đếm ngược và nút Land {landName}
-    function updateLandTable(table) {
+    const updateLandTable = (table) => {
         const tbody = document.createElement('tbody');
         const now = Date.now();
-
-        // Lọc và cập nhật land
-        currentLands = currentLands.filter(land => {
-            const elapsed = now - land.startTime;
-            const remaining = land.shortestWaiting - elapsed;
-            return remaining > 0;
-        });
+        currentLands = currentLands.filter(land => (now - land.startTime) < land.shortestWaiting);
 
         if (currentLands.length) {
             currentLands.forEach(land => {
-                const elapsed = now - land.startTime;
-                const remaining = Math.max(0, land.shortestWaiting - elapsed);
+                const remaining = Math.max(0, land.shortestWaiting - (now - land.startTime));
                 const cleanLandName = land.landName.replace('pixelsNFTFarm-', '');
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td style="padding: 0px; border: 1px solid #444; text-align: left;" onclick="window.setInputValue('${cleanLandName}')">
-                        <button style="background: #007bff; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer;width: 100%;"
-                                >Land ${cleanLandName}</button>
-                    </td>
-                    <td style="padding: 6px; border: 1px solid #444; text-align: center;">
-                        ${land.numberOfAvailableEntities}|${land.numberOfEntities}
-                    </td>
-                    <td style="padding: 6px; border: 1px solid #444; text-align: center;">
-                        ${getTimeFromShortestWaiting(remaining)}
-                    </td>
+                tbody.innerHTML += `
+                    <tr>
+                        <td style="padding: 0px; border: 1px solid #444; text-align: left;">
+                            <button style="background: #007bff; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; width: 100%; transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease;"
+                                    onmouseenter="this.style.transform='scale(1.03)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)'"
+                                    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='none'"
+                                    onmousedown="this.style.transform='scale(0.97)'"
+                                    onmouseup="this.style.transform='scale(1.03)'"
+                                    onfocus="this.style.outline='2px solid #fff'"
+                                    onblur="this.style.outline='none'"
+                                    onclick="window.setInputValue('${cleanLandName}')">Land ${cleanLandName}</button>
+                        </td>
+                        <td style="padding: 6px; border: 1px solid #444; text-align: center;">${land.numberOfAvailableEntities}|${land.numberOfEntities}</td>
+                        <td style="padding: 6px; border: 1px solid #444; text-align: center;">${getTimeFromShortestWaiting(remaining)}</td>
+                    </tr>
                 `;
-                tbody.appendChild(row);
             });
         } else {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td colspan="3" style="padding: 6px; border: 1px solid #444; text-align: center;">
-                    No data available
-                </td>
-            `;
-            tbody.appendChild(row);
+            tbody.innerHTML = `<tr><td colspan="3" style="padding: 6px; border: 1px solid #444; text-align: center;">No data available</td></tr>`;
         }
 
-        // Thay thế tbody cũ
         const oldTbody = table.querySelector('tbody');
-        if (oldTbody) {
-            table.replaceChild(tbody, oldTbody);
-        } else {
-            table.appendChild(tbody);
-        }
+        if (oldTbody) table.replaceChild(tbody, oldTbody);
+        else table.appendChild(tbody);
 
-        // Dừng interval nếu không còn land
         if (!currentLands.length && updateInterval) {
             clearInterval(updateInterval);
             updateInterval = null;
         }
-    }
+    };
 
-    // Xóa bảng khi tắt tính năng, sau khi chọn, hoặc khi hộp thoại tắt
-    function clearTable() {
+    const clearTable = () => {
         const tableContainer = document.getElementById('landTableContainer');
+        const container = document.getElementById('minebtn');
         if (tableContainer) tableContainer.innerHTML = '';
+        if (container) container.style.width = '150px'; // Revert to default width
         currentLands = [];
         if (updateInterval) {
             clearInterval(updateInterval);
             updateInterval = null;
         }
-    }
+    };
 
-    // Giải mã Base64 và Gzip cho tính năng 1
-    function decodeTimers(base64Str) {
+    // API and Data Processing
+    const decodeTimers = (base64Str) => {
         try {
-            const binaryStr = atob(base64Str);
-            const len = binaryStr.length;
-            const bytes = new Uint8Array(len);
-            for (let i = 0; i < len; i++) {
-                bytes[i] = binaryStr.charCodeAt(i);
-            }
-            const decompressed = pako.inflate(bytes, { to: 'string' });
-            return JSON.parse(decompressed);
+            const bytes = Uint8Array.from(atob(base64Str), c => c.charCodeAt(0));
+            return JSON.parse(pako.inflate(bytes, { to: 'string' }));
         } catch (error) {
-            console.error('Error decoding timers:', error);
+            //console.error('Error decoding timers:', error);
             return null;
         }
-    }
+    };
 
-    // Lọc timers cho tính năng 1
-    function filterMineTimers(timersData) {
+    const filterMineTimers = (timersData) => {
         try {
             const now = Date.now();
             const usedMapId = localStorage.getItem('lastUsedMapId');
-
             const filteredTimers = timersData.filter(timer =>
-                timer.entity?.startsWith('ent_mine') &&
-                timer.mapId &&
-                !timer.mapId.startsWith('shareRent') &&
-                timer.endTime < now
+                timer.entity?.startsWith('ent_mine') && timer.mapId && !timer.mapId.startsWith('shareRent') && timer.endTime < now
             );
 
-            if (filteredTimers.length === 0) return '';
-
-            let chosenTimer = filteredTimers.find(t => t.mapId !== usedMapId);
-            if (!chosenTimer) {
-                chosenTimer = filteredTimers[0];
-            } else {
-                const differentMapIds = filteredTimers.filter(t => t.mapId !== usedMapId);
-                chosenTimer = differentMapIds[Math.floor(Math.random() * differentMapIds.length)];
-            }
-
-            const cleanMapId = chosenTimer.mapId.replace("pixelsNFTFarm-", "");
+            if (!filteredTimers.length) return '';
+            const chosenTimer = filteredTimers.find(t => t.mapId !== usedMapId) || filteredTimers[Math.floor(Math.random() * filteredTimers.length)];
+            const cleanMapId = chosenTimer.mapId.replace('pixelsNFTFarm-', '');
             localStorage.setItem('lastUsedMapId', chosenTimer.mapId);
             return cleanMapId;
         } catch (error) {
-            console.error('❌ Lỗi lọc timers:', error);
+            //console.error('Error filtering timers:', error);
             return '';
         }
-    }
+    };
 
-    // Xử lý dữ liệu API ent_mine_04 cho tính năng 2
-    function processEntMineData(data) {
-        try {
-            if (!data?.[0]?.public?.length) return;
+    const processEntMineData = (data) => {
+        if (!data?.[0]?.public?.length) return;
+        renderLandTable(data);
+    };
 
-            // Chỉ hiển thị bảng, không tự động nhập
-            renderLandTable(data);
-        } catch (error) {
-            console.error('❌ Lỗi xử lý ent_mine data:', error);
-        }
-    }
-
-    // Điền giá trị vào input và xóa bảng
-    function setInputValue(farmLand) {
+    const setInputValue = (farmLand) => {
         const input = document.querySelector('.LandAndTravel_numberInput__Re9sf');
         const triggerBox = document.querySelector('.LandAndTravel_option__P_QSA');
-
         if (!input || !triggerBox) return;
 
         setTimeout(() => {
             triggerBox.click();
             input.focus();
             input.click();
-
-            const setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
-            setter.call(input, farmLand);
+            Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set.call(input, farmLand);
             input.dispatchEvent(new Event('input', { bubbles: true }));
 
             setTimeout(() => {
@@ -404,77 +355,62 @@
                     const confirmButton = document.querySelector('.LandAndTravel_optionButtons__5tDIJ button');
                     if (confirmButton) {
                         confirmButton.click();
-                        clearTable(); // Xóa bảng sau khi click confirm
+                        clearTable();
                     }
                 }
             }, 500);
         }, 500);
-    }
+    };
+    WINDOW.setInputValue = setInputValue;
 
-    // Gắn setInputValue vào window để nút Land gọi được
-    window.setInputValue = setInputValue;
-
-    // Gọi API cho tính năng 1
-    function fetchTimers() {
+    const fetchTimers = async () => {
         if (!featureOneEnabled) return;
-const pid = window.pga?.helpers?.getReduxValue()?.game?.player?.core?.mid || '';
-        fetch('https://api-pixels.guildpal.com/stats-api/timers/gettimers', {
-            method: 'GET',
-            headers: {
-                'x-atomrigs-pga-pid': pid,
-                'x-atomrigs-pga-version': '1.1.4'
-            }
-        })
-        .then(res => res.json())
-        .then(data => {
+        const pid = WINDOW.pga?.helpers?.getReduxValue()?.game?.player?.core?.mid || '';
+        try {
+            const res = await fetch('https://api-pixels.guildpal.com/stats-api/timers/gettimers', {
+                method: 'GET',
+                headers: { 'x-atomrigs-pga-pid': pid, 'x-atomrigs-pga-version': '1.1.4' }
+            });
+            const data = await res.json();
             if (data?.data?.timers) {
                 const decoded = decodeTimers(data.data.timers);
-                if (decoded) {
-                    const farmLand = filterMineTimers(decoded);
-                    setInputValue(farmLand);
-                }
+                if (decoded) setInputValue(filterMineTimers(decoded));
             }
-        })
-        .catch(err => console.error('❌ Fetch timers failed:', err));
-    }
+        } catch (err) {
+            //console.error('Fetch timers failed:', err);
+        }
+    };
 
-    // Gọi API cho tính năng 2
-    function fetchEntMine() {
+    const fetchEntMine = async () => {
         if (!featureTwoEnabled) return;
-
-        fetch('https://industry.guildpal.com/v2/entities/ent_mine_04?landtypes=space&count=5&includeHouse=false', {
-            method: 'GET'
-        })
-        .then(res => res.json())
-        .then(data => {
+        try {
+            const res = await fetch('https://industry.guildpal.com/v2/entities/ent_mine_04?landtypes=space&count=5&includeHouse=false');
+            const data = await res.json();
             processEntMineData(data);
-        })
-        .catch(err => console.error('❌ Fetch ent_mine failed:', err));
-    }
+        } catch (err) {
+            //console.error('Fetch ent_mine failed:', err);
+        }
+    };
 
-    // Theo dõi input xuất hiện và biến mất
+    // Observer Setup
     const observer = new MutationObserver((mutations) => {
         for (const mutation of mutations) {
-            // Kiểm tra node được thêm
             for (const node of mutation.addedNodes) {
                 if (node.nodeType === 1 && node.querySelector('.LandAndTravel_numberInput__Re9sf')) {
                     if (featureOneEnabled) fetchTimers();
                     if (featureTwoEnabled) fetchEntMine();
                 }
             }
-            // Kiểm tra node bị xóa
             for (const node of mutation.removedNodes) {
-                if (node.nodeType === 1 && node.querySelector('.LandAndTravel_numberInput__Re9sf')) {
-                    if (featureTwoEnabled) clearTable(); // Xóa bảng khi hộp thoại tắt
+                if (node.nodeType === 1 && node.querySelector('.LandAndTravel_numberInput__Re9sf') && featureTwoEnabled) {
+                    clearTable();
                 }
             }
         }
     });
 
-    observer.observe(document.body, {
-        childList: true,
-        subtree: true
-    });
-
-    window.addEventListener('load', createToggleUI);
+    observer.observe(document.body, { childList: true, subtree: true });
+    WINDOW.addEventListener('load', createToggleUI);
+    createToggleButton();
+    observeForTaskPanel();
 })();
