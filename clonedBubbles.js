@@ -65,30 +65,54 @@
   }
 
   function createToggleButton() {
-  const btn = document.createElement('button');
-  btn.innerText = 'Enable'; // Vì mặc định đang tắt
-  btn.style.position = 'fixed';
-  btn.style.bottom = '10px';
-  btn.style.right = '10px';
-  btn.style.zIndex = '10000';
-  btn.style.padding = '10px 15px';
-  btn.style.background = '#007bff';
-  btn.style.color = '#fff';
-  btn.style.border = 'none';
-  btn.style.borderRadius = '6px';
-  btn.style.cursor = 'pointer';
-  btn.style.boxShadow = '0 2px 5px rgba(0,0,0,0.3)';
-  btn.style.fontWeight = 'bold';
+    const btn = document.createElement('button');
+    btn.textContent = '⏲️';
+    btn.title = 'Toggle Timer Bubbles';
+    btn.style.position = 'fixed';
+    btn.style.bottom = '10px';
+    btn.style.right = '10px';
+    btn.style.zIndex = '10000';
+    btn.style.width = '50px';
+    btn.style.height = '50px';
+    btn.style.background = '#007bff';
+    btn.style.border = 'none';
+    btn.style.borderRadius = '6px';
+    btn.style.cursor = 'pointer';
+    btn.style.boxShadow = '0 2px 5px rgba(0,0,0,0.3)';
+    btn.style.fontSize = '24px';
+    btn.style.display = 'flex';
+    btn.style.alignItems = 'center';
+    btn.style.justifyContent = 'center';
+    btn.style.transition = 'transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease';
+    btn.style.outline = 'none';
 
-  btn.addEventListener('click', () => {
-    enabled = !enabled;
-    btn.innerText = enabled ? 'Disable' : 'Enable';
-  });
+    btn.addEventListener('mouseenter', () => {
+      btn.style.transform = 'scale(1.05)';
+      btn.style.boxShadow = '0 4px 8px rgba(0,0,0,0.4)';
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'scale(1)';
+      btn.style.boxShadow = '0 2px 5px rgba(0,0,0,0.3)';
+    });
+    btn.addEventListener('mousedown', () => {
+      btn.style.transform = 'scale(0.95)';
+    });
+    btn.addEventListener('mouseup', () => {
+      btn.style.transform = 'scale(1.05)';
+    });
+    btn.addEventListener('focus', () => {
+      btn.style.outline = '2px solid #fff';
+    });
+    btn.addEventListener('blur', () => {
+      btn.style.outline = 'none';
+    });
+    btn.addEventListener('click', () => {
+      enabled = !enabled;
+      btn.style.background = enabled ? '#16a34a' : '#007bff';
+    });
 
-  document.body.appendChild(btn);
-}
-
-
+    document.body.appendChild(btn);
+  }
 
   // Main Loop
   setInterval(() => {
@@ -130,13 +154,12 @@
   }, 100);
 
   // Tạo nút điều khiển
-  //createResetButton();
   createToggleButton();
-    document.addEventListener('keydown', (e) => {
-  if (!enabled) return;
-  if (e.code === 'Space') {
-    e.preventDefault(); // Ngăn cuộn trang khi nhấn Space
-    clearAllBubbles();
-  }
-});
+  document.addEventListener('keydown', (e) => {
+    if (!enabled) return;
+    if (e.code === 'Space') {
+      e.preventDefault(); // Ngăn cuộn trang khi nhấn Space
+      clearAllBubbles();
+    }
+  });
 })();
