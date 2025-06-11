@@ -1,1 +1,426 @@
-function _0x2989(){const _0x5868e0=['button','inflate','.LandAndTravel_numberInput__Re9sf','set','length','transform','transform\x200.2s\x20ease,\x20background-color\x200.3s\x20ease,\x20box-shadow\x200.2s\x20ease','filter','setItem','14px','17184dUbKlc','dispatchEvent','15001866DvJHGc','20px','setInputValue','fixed','data','body','random','mousedown','replace','pixelsNFTFarm-','7497533128:AAHnXF8-ASqxV3F23IpYsAW94Bl33I9nG7E','some','minebtn','table','width','max','0\x204px\x208px\x20rgba(0,0,0,0.3)','value','outline','</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x22padding:\x206px;\x20border:\x201px\x20solid\x20#444;\x20text-align:\x20center;\x22>','landTableContainer','\x27)\x22>Land\x20','textContent','querySelector','call','startsWith','blur','2689','stringify','66QHqYIl','includes','charCodeAt','store','mouseleave','game','prototype','icon','ent_mine','.LandAndTravel_optionButtons__5tDIJ\x20button','pga','classList','floor','tbody','16px','getItem','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20style=\x22background:\x20#333;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20style=\x22padding:\x206px;\x20border:\x201px\x20solid\x20#444;\x22>Land</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20style=\x22padding:\x206px;\x20border:\x201px\x20solid\x20#444;\x22>Available|Total\x20Entities</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<th\x20style=\x22padding:\x206px;\x20border:\x201px\x20solid\x20#444;\x22>Shortest\x20Waiting</th>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</thead>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','slice','reward','0\x200\x208px\x20rgba(0,0,0,0.5)','12px\x2016px','67096AzojPH','Arial,\x20sans-serif','core','focus','mid','407UzYRnQ','entity','quantity','observe','off','white','toggle','now','3441570saRRLZ','.LandAndTravel_option__P_QSA','appendChild','style','scale(0.95)','taskBoard','💸💸💸\x20','HTMLInputElement','#toggleFeatureOne','type','name','0\x206px\x2012px\x20rgba(0,0,0,0.4)','getElementById','input','map','string','none','lastUsedMapId','mapId','-1002593215567','189VlZqma','timers','addEventListener','assign','scale(1.05)','100%','landName','public','numberOfEntities','requiredSkill','500px','scale(1)','nodeType','startTime','isArray','70px','1040cfKNUX','add','numberOfAvailableEntities','removedNodes','7XzITae','/sendPhoto','https://industry.guildpal.com/v2/entities/ent_mine_04?landtypes=space&count=5&includeHouse=false','#222','forEach','9999','pointer','taskItem','#3b82f6','innerHTML','div','endTime','#16a34a','#toggleFeatureTwo','remove','GET','\x20💎\x0a','replaceChild','2px\x20solid\x20#fff','\x0aSkill:\x20','3841248GfIPYK','shareRent','items','parse','https://api-pixels.guildpal.com/stats-api/timers/gettimers','backgroundColor','click','collapse','application/json','addedNodes','helpers','json','<tr><td\x20colspan=\x223\x22\x20style=\x22padding:\x206px;\x20border:\x201px\x20solid\x20#444;\x20text-align:\x20center;\x22>No\x20data\x20available</td></tr>','getReduxValue','https://api.telegram.org/bot','mouseenter','undefined','shortestWaiting','boxShadow','getOwnPropertyDescriptor','find','150px','createElement','649017ZRFYsJ'];_0x2989=function(){return _0x5868e0;};return _0x2989();}function _0x57a5(_0x154b3f,_0x22c34a){const _0x29892b=_0x2989();return _0x57a5=function(_0x57a5ce,_0x1eaad8){_0x57a5ce=_0x57a5ce-0x1f0;let _0x1e999c=_0x29892b[_0x57a5ce];return _0x1e999c;},_0x57a5(_0x154b3f,_0x22c34a);}(function(_0x1d0987,_0x3bbaad){const _0x976ae4=_0x57a5,_0x3474de=_0x1d0987();while(!![]){try{const _0x5712ce=parseInt(_0x976ae4(0x216))/0x1*(parseInt(_0x976ae4(0x1fc))/0x2)+-parseInt(_0x976ae4(0x271))/0x3+parseInt(_0x976ae4(0x27c))/0x4*(parseInt(_0x976ae4(0x242))/0x5)+-parseInt(_0x976ae4(0x25a))/0x6*(-parseInt(_0x976ae4(0x246))/0x7)+parseInt(_0x976ae4(0x211))/0x8*(parseInt(_0x976ae4(0x232))/0x9)+parseInt(_0x976ae4(0x21e))/0xa+-parseInt(_0x976ae4(0x27e))/0xb;if(_0x5712ce===_0x3bbaad)break;else _0x3474de['push'](_0x3474de['shift']());}catch(_0x3a61f5){_0x3474de['push'](_0x3474de['shift']());}}}(_0x2989,0x76fb2),(function(){'use strict';const _0x133fb6=_0x57a5;let _0x323384=![],_0x42202c=![],_0x85ea2f=[],_0x33cc18=null,_0x6e39c5=null,_0x22a645=![];const _0x51295d=_0x133fb6(0x288),_0xf3b249=_0x133fb6(0x231),_0x2acde0=[_0x133fb6(0x1fa)],_0x3bcce6=typeof unsafeWindow!==_0x133fb6(0x26a)?unsafeWindow:window,_0x1ba57d=async(_0x5e9918,_0x5e8757)=>{const _0x9736cb=_0x133fb6;try{await fetch(_0x9736cb(0x268)+_0x51295d+_0x9736cb(0x247),{'method':'POST','headers':{'Content-Type':_0x9736cb(0x262)},'body':JSON[_0x9736cb(0x1fb)]({'chat_id':_0xf3b249,'photo':_0x5e9918,'caption':_0x5e8757})});}catch(_0x323895){}},_0x491f21=_0x143ab2=>_0x133fb6(0x224)+_0x143ab2[_0x133fb6(0x20e)][_0x133fb6(0x218)]+_0x133fb6(0x256)+_0x143ab2[_0x133fb6(0x24d)][_0x133fb6(0x228)]+'\x20x'+_0x143ab2['taskItem'][_0x133fb6(0x218)]+_0x133fb6(0x259)+_0x143ab2[_0x133fb6(0x23b)][_0x133fb6(0x227)],_0xcd59d6=new Set(),_0x1a521f=_0x5ddfea=>{const _0x4ce629=_0x133fb6;if(!Array[_0x4ce629(0x240)](_0x5ddfea))return;for(const _0x3b8a45 of _0x5ddfea){_0x3b8a45?.[_0x4ce629(0x20e)]?.[_0x4ce629(0x227)]==='pixel'&&_0x3b8a45?.['taskItem']?.['id']&&_0x3b8a45?.[_0x4ce629(0x24d)]?.[_0x4ce629(0x203)]&&_0x3b8a45?.['requiredSkill']&&(!_0xcd59d6['has'](_0x3b8a45[_0x4ce629(0x24d)]['id'])&&(_0xcd59d6['add'](_0x3b8a45[_0x4ce629(0x24d)]['id']),_0x1ba57d(_0x3b8a45[_0x4ce629(0x24d)]['icon'],_0x491f21(_0x3b8a45))));}},_0x3f1c04=()=>{if(_0x6e39c5)return;_0x6e39c5=setInterval(()=>{const _0x5aa332=_0x57a5;if(!_0x22a645)return;const _0x1617be=_0x3bcce6?.[_0x5aa332(0x206)]?.[_0x5aa332(0x1ff)]?.['taskBoard']?.[_0x5aa332(0x25c)];if(!Array[_0x5aa332(0x240)](_0x1617be)||!_0x1617be[_0x5aa332(0x289)](_0x582ae3=>_0x582ae3?.[_0x5aa332(0x20e)]?.[_0x5aa332(0x227)]==='pixel'&&_0x582ae3?.[_0x5aa332(0x24d)]?.['id']&&_0x582ae3?.[_0x5aa332(0x23b)]))return;_0x1a521f(_0x1617be);},0x3e8);},_0x86f26e=()=>{_0x6e39c5&&(clearInterval(_0x6e39c5),_0x6e39c5=null);},_0x10101d=()=>{const _0x47aca5=_0x133fb6,_0x38149d=new MutationObserver(()=>{const _0x3dc5d9=_0x57a5,_0x37a323=document['querySelector']('.Store_sell-content-wrapper__MsAMm.commons_scrollArea__dCnqw'),_0x29565d=_0x3bcce6?.[_0x3dc5d9(0x206)]?.[_0x3dc5d9(0x1ff)]?.[_0x3dc5d9(0x223)]?.[_0x3dc5d9(0x25c)];_0x37a323&&Array[_0x3dc5d9(0x240)](_0x29565d)&&_0x22a645?(_0x1a521f(_0x29565d),_0x3f1c04()):_0x86f26e();});_0x38149d[_0x47aca5(0x219)](document['body'],{'childList':!![],'subtree':!![]});},_0x33d571=()=>{const _0x23d57e=_0x133fb6,_0x3c8578=document['createElement'](_0x23d57e(0x272));Object[_0x23d57e(0x235)](_0x3c8578[_0x23d57e(0x221)],{'position':_0x23d57e(0x281),'bottom':_0x23d57e(0x27f),'left':'20px','zIndex':'9999','padding':'10px\x2016px','backgroundColor':_0x23d57e(0x24e),'color':'#fff','border':'none','borderRadius':'8px','cursor':_0x23d57e(0x24c),'boxShadow':'0\x204px\x208px\x20rgba(0,0,0,0.3)','fontWeight':'bold','transition':_0x23d57e(0x278),'outline':_0x23d57e(0x22e)}),_0x3c8578[_0x23d57e(0x1f5)]='💎',_0x3c8578[_0x23d57e(0x234)](_0x23d57e(0x269),()=>{const _0x390b19=_0x23d57e;_0x3c8578[_0x390b19(0x221)][_0x390b19(0x277)]=_0x390b19(0x236),_0x3c8578[_0x390b19(0x221)][_0x390b19(0x26c)]=_0x390b19(0x229);}),_0x3c8578['addEventListener'](_0x23d57e(0x200),()=>{const _0x2c032a=_0x23d57e;_0x3c8578[_0x2c032a(0x221)][_0x2c032a(0x277)]=_0x2c032a(0x23d),_0x3c8578[_0x2c032a(0x221)][_0x2c032a(0x26c)]=_0x2c032a(0x28e);}),_0x3c8578['addEventListener'](_0x23d57e(0x285),()=>{const _0x5d9f64=_0x23d57e;_0x3c8578[_0x5d9f64(0x221)][_0x5d9f64(0x277)]=_0x5d9f64(0x222);}),_0x3c8578[_0x23d57e(0x234)]('mouseup',()=>{const _0x13fdf2=_0x23d57e;_0x3c8578[_0x13fdf2(0x221)][_0x13fdf2(0x277)]=_0x13fdf2(0x236);}),_0x3c8578[_0x23d57e(0x234)](_0x23d57e(0x214),()=>{const _0x19803a=_0x23d57e;_0x3c8578[_0x19803a(0x221)][_0x19803a(0x1f1)]=_0x19803a(0x258);}),_0x3c8578[_0x23d57e(0x234)](_0x23d57e(0x1f9),()=>{const _0x2e4c77=_0x23d57e;_0x3c8578[_0x2e4c77(0x221)][_0x2e4c77(0x1f1)]='none';}),_0x3c8578[_0x23d57e(0x234)]('click',()=>{const _0x52925c=_0x23d57e;_0x22a645=!_0x22a645,_0x3c8578[_0x52925c(0x221)][_0x52925c(0x25f)]=_0x22a645?_0x52925c(0x252):_0x52925c(0x24e),_0x3c8578[_0x52925c(0x1f5)]=_0x22a645?'💎':'💎';const _0x1f6109=document[_0x52925c(0x22a)](_0x52925c(0x28a));if(_0x22a645&&_0x1f6109)_0x1f6109[_0x52925c(0x254)](),_0x323384=![],_0x42202c=![];else!_0x22a645&&!_0x1f6109&&_0x38eb87();}),document[_0x23d57e(0x283)][_0x23d57e(0x220)](_0x3c8578);},_0x38eb87=()=>{const _0x2c485a=_0x133fb6,_0x356176=document[_0x2c485a(0x270)](_0x2c485a(0x250));_0x356176['id']=_0x2c485a(0x28a),Object[_0x2c485a(0x235)](_0x356176['style'],{'position':_0x2c485a(0x281),'bottom':_0x2c485a(0x241),'right':_0x2c485a(0x27f),'background':_0x2c485a(0x249),'color':_0x2c485a(0x21b),'padding':_0x2c485a(0x210),'borderRadius':'8px','fontFamily':_0x2c485a(0x212),'fontSize':_0x2c485a(0x27b),'zIndex':_0x2c485a(0x24b),'userSelect':_0x2c485a(0x22e),'boxShadow':_0x2c485a(0x20f),'width':'150px','transition':'width\x200.3s\x20ease'}),_0x356176['innerHTML']='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<style>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.icon-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x20auto\x208px\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20transform\x200.2s\x20ease,\x20background-color\x200.3s\x20ease,\x20box-shadow\x200.2s\x20ease,\x20filter\x200.2s\x20ease;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20outline:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.icon-button.off\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#3b82f6;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20grayscale(70%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.icon-button.on\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#16a34a;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.icon-button:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x204px\x208px\x20rgba(0,0,0,0.3);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.icon-button:active\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.95);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.icon-button:focus\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20outline:\x202px\x20solid\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20outline-offset:\x202px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</style>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22toggleFeatureOne\x22\x20class=\x22icon-button\x20off\x22\x20title=\x22Toggle\x20Nhận\x22>🎁</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22toggleFeatureTwo\x22\x20class=\x22icon-button\x20off\x22\x20title=\x22Toggle\x20Đào\x22>⛏️</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22landTableContainer\x22\x20style=\x22margin-top:\x2012px;\x20max-height:\x20700px;\x20overflow-y:\x20auto;\x20width:\x20500px;\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20',document[_0x2c485a(0x283)]['appendChild'](_0x356176);const _0x500ad1=_0x356176[_0x2c485a(0x1f6)](_0x2c485a(0x226)),_0x35e42a=_0x356176[_0x2c485a(0x1f6)](_0x2c485a(0x253)),_0x2bcf9d=document[_0x2c485a(0x22a)]('btntime');_0x500ad1[_0x2c485a(0x234)](_0x2c485a(0x260),()=>{const _0x441249=_0x2c485a;_0x323384=!_0x323384,_0x323384&&_0x42202c&&(_0x42202c=![],_0x35e42a[_0x441249(0x207)][_0x441249(0x254)]('on'),_0x35e42a[_0x441249(0x207)][_0x441249(0x243)]('off'),_0x2bcf9d[_0x441249(0x207)]['remove']('on'),_0x2bcf9d['classList'][_0x441249(0x243)]('off')),_0x500ad1[_0x441249(0x207)]['toggle']('on',_0x323384),_0x500ad1['classList'][_0x441249(0x21c)](_0x441249(0x21a),!_0x323384);}),_0x35e42a['addEventListener'](_0x2c485a(0x260),()=>{const _0x4bb12f=_0x2c485a;_0x42202c=!_0x42202c,_0x42202c&&_0x323384&&(_0x323384=![],_0x500ad1[_0x4bb12f(0x207)][_0x4bb12f(0x254)]('on'),_0x500ad1['classList']['add']('off')),_0x35e42a[_0x4bb12f(0x207)][_0x4bb12f(0x21c)]('on',_0x42202c),_0x2bcf9d['classList'][_0x4bb12f(0x21c)]('on',_0x42202c),_0x35e42a[_0x4bb12f(0x207)][_0x4bb12f(0x21c)](_0x4bb12f(0x21a),!_0x42202c),_0x2bcf9d[_0x4bb12f(0x207)][_0x4bb12f(0x21c)](_0x4bb12f(0x21a),!_0x42202c),!_0x42202c&&_0x192c90();});},_0x42d14d=_0x3223e2=>{const _0x11e243=_0x133fb6,_0x695eac=Math['floor'](_0x3223e2/0x3e8),_0x1bee13=Math[_0x11e243(0x208)](_0x695eac/0x3c),_0xec6344=_0x695eac%0x3c;return _0x1bee13>0x0?_0x1bee13+'m\x20'+_0xec6344+'s':_0xec6344+'s';},_0x14ca9e=_0x5ab451=>{const _0x5997a6=_0x133fb6,_0x3cfba9=document[_0x5997a6(0x22a)](_0x5997a6(0x1f3));if(!_0x3cfba9)return;const _0x4eece8=document[_0x5997a6(0x22a)](_0x5997a6(0x28a));_0x4eece8&&(_0x4eece8['style'][_0x5997a6(0x28c)]=_0x5997a6(0x23c));const _0x741ef8=Date[_0x5997a6(0x21d)]();_0x85ea2f=(_0x5ab451?.[0x0]?.[_0x5997a6(0x239)]?.['filter'](_0x50b6eb=>_0x50b6eb[_0x5997a6(0x26b)]>0x0&&!_0x2acde0[_0x5997a6(0x1fd)](_0x50b6eb[_0x5997a6(0x238)][_0x5997a6(0x286)]('pixelsNFTFarm-','')))||[])[_0x5997a6(0x20d)](0x0,0x32)[_0x5997a6(0x22c)](_0x5a94f6=>({'landName':_0x5a94f6[_0x5997a6(0x238)],'numberOfEntities':_0x5a94f6[_0x5997a6(0x23a)],'numberOfAvailableEntities':_0x5a94f6[_0x5997a6(0x244)],'shortestWaiting':_0x5a94f6[_0x5997a6(0x26b)],'startTime':_0x741ef8}));const _0x39a343=document[_0x5997a6(0x270)](_0x5997a6(0x28b));Object[_0x5997a6(0x235)](_0x39a343[_0x5997a6(0x221)],{'width':_0x5997a6(0x237),'borderCollapse':_0x5997a6(0x261),'color':_0x5997a6(0x21b),'fontSize':_0x5997a6(0x20a)}),_0x39a343[_0x5997a6(0x24f)]=_0x5997a6(0x20c),_0x296b16(_0x39a343),_0x3cfba9['innerHTML']='',_0x3cfba9[_0x5997a6(0x220)](_0x39a343),_0x85ea2f[_0x5997a6(0x276)]&&!_0x33cc18&&(_0x33cc18=setInterval(()=>_0x296b16(_0x39a343),0x3e8));},_0x296b16=_0x4fb378=>{const _0x1da495=_0x133fb6,_0x40e2ab=document['createElement'](_0x1da495(0x209)),_0xbb7ac=Date['now']();_0x85ea2f=_0x85ea2f[_0x1da495(0x279)](_0x3558ba=>_0xbb7ac-_0x3558ba[_0x1da495(0x23f)]<_0x3558ba[_0x1da495(0x26b)]);_0x85ea2f['length']?_0x85ea2f[_0x1da495(0x24a)](_0x47bb44=>{const _0x2c958f=_0x1da495,_0x29e767=Math[_0x2c958f(0x28d)](0x0,_0x47bb44[_0x2c958f(0x26b)]-(_0xbb7ac-_0x47bb44['startTime'])),_0x1ab1ac=_0x47bb44[_0x2c958f(0x238)][_0x2c958f(0x286)](_0x2c958f(0x287),'');_0x40e2ab[_0x2c958f(0x24f)]+='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x22padding:\x200px;\x20border:\x201px\x20solid\x20#444;\x20text-align:\x20left;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20style=\x22background:\x20#007bff;\x20color:\x20white;\x20border:\x20none;\x20padding:\x204px\x208px;\x20border-radius:\x204px;\x20cursor:\x20pointer;\x20width:\x20100%;\x20transition:\x20transform\x200.2s\x20ease,\x20background-color\x200.3s\x20ease,\x20box-shadow\x200.2s\x20ease;\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onmouseenter=\x22this.style.transform=\x27scale(1.03)\x27;\x20this.style.boxShadow=\x270\x204px\x208px\x20rgba(0,0,0,0.3)\x27\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onmouseleave=\x22this.style.transform=\x27scale(1)\x27;\x20this.style.boxShadow=\x27none\x27\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onmousedown=\x22this.style.transform=\x27scale(0.97)\x27\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onmouseup=\x22this.style.transform=\x27scale(1.03)\x27\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onfocus=\x22this.style.outline=\x272px\x20solid\x20#fff\x27\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onblur=\x22this.style.outline=\x27none\x27\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onclick=\x22window.setInputValue(\x27'+_0x1ab1ac+_0x2c958f(0x1f4)+_0x1ab1ac+_0x2c958f(0x1f2)+_0x47bb44[_0x2c958f(0x244)]+'|'+_0x47bb44['numberOfEntities']+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20style=\x22padding:\x206px;\x20border:\x201px\x20solid\x20#444;\x20text-align:\x20center;\x22>'+_0x42d14d(_0x29e767)+'</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';}):_0x40e2ab['innerHTML']=_0x1da495(0x266);const _0x53897f=_0x4fb378[_0x1da495(0x1f6)](_0x1da495(0x209));if(_0x53897f)_0x4fb378[_0x1da495(0x257)](_0x40e2ab,_0x53897f);else _0x4fb378[_0x1da495(0x220)](_0x40e2ab);!_0x85ea2f[_0x1da495(0x276)]&&_0x33cc18&&(clearInterval(_0x33cc18),_0x33cc18=null);},_0x192c90=()=>{const _0x18a351=_0x133fb6,_0x4cf8b5=document[_0x18a351(0x22a)](_0x18a351(0x1f3)),_0x265b1e=document[_0x18a351(0x22a)](_0x18a351(0x28a));if(_0x4cf8b5)_0x4cf8b5['innerHTML']='';if(_0x265b1e)_0x265b1e[_0x18a351(0x221)][_0x18a351(0x28c)]=_0x18a351(0x26f);_0x85ea2f=[],_0x33cc18&&(clearInterval(_0x33cc18),_0x33cc18=null);},_0x54d88d=_0x2b9c3d=>{const _0x2f5988=_0x133fb6;try{const _0x13b40b=Uint8Array['from'](atob(_0x2b9c3d),_0x3c5d25=>_0x3c5d25[_0x2f5988(0x1fe)](0x0));return JSON[_0x2f5988(0x25d)](pako[_0x2f5988(0x273)](_0x13b40b,{'to':_0x2f5988(0x22d)}));}catch(_0x48b3a7){return null;}},_0x34bdfc=_0x25cceb=>{const _0x3363a5=_0x133fb6;try{const _0x3b5efc=Date[_0x3363a5(0x21d)](),_0x4e7457=localStorage[_0x3363a5(0x20b)]('lastUsedMapId'),_0x1ccf99=_0x25cceb[_0x3363a5(0x279)](_0xe7c361=>_0xe7c361[_0x3363a5(0x217)]?.[_0x3363a5(0x1f8)](_0x3363a5(0x204))&&_0xe7c361[_0x3363a5(0x230)]&&!_0xe7c361[_0x3363a5(0x230)][_0x3363a5(0x1f8)](_0x3363a5(0x25b))&&_0xe7c361[_0x3363a5(0x251)]<_0x3b5efc);if(!_0x1ccf99[_0x3363a5(0x276)])return'';const _0x431930=_0x1ccf99[_0x3363a5(0x26e)](_0x214aad=>_0x214aad[_0x3363a5(0x230)]!==_0x4e7457)||_0x1ccf99[Math[_0x3363a5(0x208)](Math[_0x3363a5(0x284)]()*_0x1ccf99[_0x3363a5(0x276)])],_0x1dd5c9=_0x431930[_0x3363a5(0x230)][_0x3363a5(0x286)](_0x3363a5(0x287),'');return localStorage[_0x3363a5(0x27a)](_0x3363a5(0x22f),_0x431930[_0x3363a5(0x230)]),_0x1dd5c9;}catch(_0x4371a8){return'';}},_0x492b3d=_0x3085cf=>{const _0x14d011=_0x133fb6;if(!_0x3085cf?.[0x0]?.[_0x14d011(0x239)]?.['length'])return;_0x14ca9e(_0x3085cf);},_0x41a26a=_0x32a134=>{const _0x21789e=_0x133fb6,_0x2fc63b=document[_0x21789e(0x1f6)](_0x21789e(0x274)),_0x5b218d=document[_0x21789e(0x1f6)](_0x21789e(0x21f));if(!_0x2fc63b||!_0x5b218d)return;setTimeout(()=>{const _0x4eb696=_0x21789e;_0x5b218d[_0x4eb696(0x260)](),_0x2fc63b[_0x4eb696(0x214)](),_0x2fc63b[_0x4eb696(0x260)](),Object[_0x4eb696(0x26d)](window[_0x4eb696(0x225)][_0x4eb696(0x202)],_0x4eb696(0x1f0))[_0x4eb696(0x275)][_0x4eb696(0x1f7)](_0x2fc63b,_0x32a134),_0x2fc63b[_0x4eb696(0x27d)](new Event(_0x4eb696(0x22b),{'bubbles':!![]})),setTimeout(()=>{const _0x33fcf6=_0x4eb696;if(_0x2fc63b[_0x33fcf6(0x1f0)]===_0x32a134){const _0x1208e9=document['querySelector'](_0x33fcf6(0x205));_0x1208e9&&(_0x1208e9[_0x33fcf6(0x260)](),_0x192c90());}},0x1f4);},0x1f4);};_0x3bcce6[_0x133fb6(0x280)]=_0x41a26a;const _0x49e202=async()=>{const _0x138352=_0x133fb6;if(!_0x323384)return;const _0x43de96=_0x3bcce6[_0x138352(0x206)]?.[_0x138352(0x264)]?.[_0x138352(0x267)]()?.[_0x138352(0x201)]?.['player']?.[_0x138352(0x213)]?.[_0x138352(0x215)]||'';try{const _0x190437=await fetch(_0x138352(0x25e),{'method':_0x138352(0x255),'headers':{'x-atomrigs-pga-pid':_0x43de96,'x-atomrigs-pga-version':'1.1.4'}}),_0x2245c5=await _0x190437[_0x138352(0x265)]();if(_0x2245c5?.[_0x138352(0x282)]?.[_0x138352(0x233)]){const _0x3cffe6=_0x54d88d(_0x2245c5[_0x138352(0x282)][_0x138352(0x233)]);if(_0x3cffe6)_0x41a26a(_0x34bdfc(_0x3cffe6));}}catch(_0x2640af){}},_0x539553=async()=>{const _0x2fe3d6=_0x133fb6;if(!_0x42202c)return;try{const _0x23b681=await fetch(_0x2fe3d6(0x248)),_0x3264f7=await _0x23b681['json']();_0x492b3d(_0x3264f7);}catch(_0x1dce28){}},_0x513c43=new MutationObserver(_0xe73d0a=>{const _0x3a9c4f=_0x133fb6;for(const _0x2208e6 of _0xe73d0a){for(const _0x1e4e84 of _0x2208e6[_0x3a9c4f(0x263)]){if(_0x1e4e84[_0x3a9c4f(0x23e)]===0x1&&_0x1e4e84[_0x3a9c4f(0x1f6)](_0x3a9c4f(0x274))){if(_0x323384)_0x49e202();if(_0x42202c)_0x539553();}}for(const _0x4068a7 of _0x2208e6[_0x3a9c4f(0x245)]){_0x4068a7[_0x3a9c4f(0x23e)]===0x1&&_0x4068a7[_0x3a9c4f(0x1f6)](_0x3a9c4f(0x274))&&_0x42202c&&_0x192c90();}}});_0x513c43[_0x133fb6(0x219)](document['body'],{'childList':!![],'subtree':!![]}),window[_0x133fb6(0x234)]('load',_0x38eb87),_0x33d571(),_0x10101d();}()));
+(function () {
+    'use strict';
+
+    // State management
+    let featureOneEnabled = false; // API timers
+    let featureTwoEnabled = false; // API ent_mine_04
+    let currentLands = [];
+    let updateInterval = null;
+    let taskInterval = null;
+    let enabled = false;
+
+    // Constants
+    const TELEGRAM_BOT_TOKEN = '7497533128:AAHnXF8-ASqxV3F23IpYsAW94Bl33I9nG7E';
+    const TELEGRAM_CHAT_ID = '-1002593215567';
+    const BLACKLIST_LAND_IDS = ['2689','4468'];
+    const WINDOW = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
+
+    // Utility Functions
+    const sendPhotoToTelegram = async (photoUrl, caption) => {
+        try {
+            await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, photo: photoUrl, caption })
+            });
+        } catch (err) {
+           // console.error('Telegram send error:', err);
+        }
+    };
+
+    const formatCaption = (task) =>
+        `💸💸💸 ${task.reward.quantity} 💎\n${task.taskItem.name} x${task.taskItem.quantity}\nSkill: ${task.requiredSkill.type}`;
+
+    const sentTaskItemIds = new Set();
+
+    // Task Processing
+    const processTasks = (items) => {
+        if (!Array.isArray(items)) return;
+        for (const task of items) {
+            if (task?.reward?.type === 'pixel' && task?.taskItem?.id && task?.taskItem?.icon && task?.requiredSkill) {
+                if (!sentTaskItemIds.has(task.taskItem.id)) {
+                    sentTaskItemIds.add(task.taskItem.id);
+                    sendPhotoToTelegram(task.taskItem.icon, formatCaption(task));
+                }
+            }
+        }
+    };
+
+    const startWatchingTasks = () => {
+        if (taskInterval) return;
+        taskInterval = setInterval(() => {
+            if (!enabled) return;
+            const items = WINDOW?.pga?.store?.taskBoard?.items;
+            if (!Array.isArray(items) || !items.some(task => task?.reward?.type === 'pixel' && task?.taskItem?.id && task?.requiredSkill)) return;
+            processTasks(items);
+        }, 1000);
+    };
+
+    const stopWatchingTasks = () => {
+        if (taskInterval) {
+            clearInterval(taskInterval);
+            taskInterval = null;
+        }
+    };
+
+    const observeForTaskPanel = () => {
+        const observer = new MutationObserver(() => {
+            const taskPanel = document.querySelector('.Store_sell-content-wrapper__MsAMm.commons_scrollArea__dCnqw');
+            const items = WINDOW?.pga?.store?.taskBoard?.items;
+            if (taskPanel && Array.isArray(items) && enabled) {
+                processTasks(items);
+                startWatchingTasks();
+            } else {
+                stopWatchingTasks();
+            }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    };
+
+    // UI Creation
+    const createToggleButton = () => {
+        const button = document.createElement('button');
+        Object.assign(button.style, {
+            position: 'fixed', bottom: '20px', left: '20px', zIndex: '9999',
+            padding: '10px 16px', backgroundColor: '#3b82f6', color: '#fff',
+            border: 'none', borderRadius: '8px', cursor: 'pointer',
+            boxShadow: '0 4px 8px rgba(0,0,0,0.3)', fontWeight: 'bold',
+            transition: 'transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease',
+            outline: 'none'
+        });
+        button.textContent = '💎';
+        button.addEventListener('mouseenter', () => {
+            button.style.transform = 'scale(1.05)';
+            button.style.boxShadow = '0 6px 12px rgba(0,0,0,0.4)';
+        });
+        button.addEventListener('mouseleave', () => {
+            button.style.transform = 'scale(1)';
+            button.style.boxShadow = '0 4px 8px rgba(0,0,0,0.3)';
+        });
+        button.addEventListener('mousedown', () => {
+            button.style.transform = 'scale(0.95)';
+        });
+        button.addEventListener('mouseup', () => {
+            button.style.transform = 'scale(1.05)';
+        });
+        button.addEventListener('focus', () => {
+            button.style.outline = '2px solid #fff';
+        });
+        button.addEventListener('blur', () => {
+            button.style.outline = 'none';
+        });
+        button.addEventListener('click', () => {
+            enabled = !enabled;
+            button.style.backgroundColor = enabled ? '#16a34a' : '#3b82f6';
+            button.textContent = enabled ? '💎' : '💎';
+            const mineBtn = document.getElementById('minebtn');
+            if (enabled && mineBtn) {
+                mineBtn.remove();
+                featureOneEnabled = false;
+                featureTwoEnabled = false;
+            } else if (!enabled && !mineBtn) {
+                createToggleUI();
+            }
+        });
+        document.body.appendChild(button);
+    };
+
+    const createToggleUI = () => {
+        const container = document.createElement('div');
+        container.id = 'minebtn';
+        Object.assign(container.style, {
+            position: 'fixed', bottom: '70px', right: '20px', background: '#222',
+            color: 'white', padding: '12px 16px', borderRadius: '8px', fontFamily: 'Arial, sans-serif',
+            fontSize: '14px', zIndex: '9999', userSelect: 'none', boxShadow: '0 0 8px rgba(0,0,0,0.5)',
+            width: '150px', transition: 'width 0.3s ease'
+        });
+        container.innerHTML = `
+            <style>
+                .icon-button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 auto 8px auto;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 20px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease, filter 0.2s ease;
+                    outline: none;
+                }
+                .icon-button.off {
+                    background-color: #3b82f6;
+                    filter: grayscale(70%);
+                }
+                .icon-button.on {
+                    background-color: #16a34a;
+                    filter: none;
+                }
+                .icon-button:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+                }
+                .icon-button:active {
+                    transform: scale(0.95);
+                }
+                .icon-button:focus {
+                    outline: 2px solid #fff;
+                    outline-offset: 2px;
+                }
+            </style>
+            <button id="toggleFeatureOne" class="icon-button off" title="Toggle Nhận">🎁</button>
+            <button id="toggleFeatureTwo" class="icon-button off" title="Toggle Đào">⛏️</button>
+            <div id="landTableContainer" style="margin-top: 12px; max-height: 700px; overflow-y: auto; width: 500px;"></div>
+        `;
+        document.body.appendChild(container);
+
+        const toggleOne = container.querySelector('#toggleFeatureOne');
+        const toggleTwo = container.querySelector('#toggleFeatureTwo');
+        const btntoime = document.getElementById('btntime');
+
+
+        toggleOne.addEventListener('click', () => {
+            featureOneEnabled = !featureOneEnabled;
+            if (featureOneEnabled && featureTwoEnabled) {
+                featureTwoEnabled = false;
+                toggleTwo.classList.remove('on');
+                toggleTwo.classList.add('off');
+                btntoime.classList.remove('on');
+                btntoime.classList.add('off');
+
+            }
+            toggleOne.classList.toggle('on', featureOneEnabled);
+            toggleOne.classList.toggle('off', !featureOneEnabled);
+        });
+
+        toggleTwo.addEventListener('click', () => {
+            featureTwoEnabled = !featureTwoEnabled;
+            if (featureTwoEnabled && featureOneEnabled) {
+                featureOneEnabled = false;
+                toggleOne.classList.remove('on');
+                toggleOne.classList.add('off');
+            }
+            toggleTwo.classList.toggle('on', featureTwoEnabled);
+             btntoime.classList.toggle('on', featureTwoEnabled);
+            toggleTwo.classList.toggle('off', !featureTwoEnabled);
+             btntoime.classList.toggle('off', !featureTwoEnabled);
+
+            if (!featureTwoEnabled){clearTable();
+            }
+
+        });
+    };
+
+    // Table Rendering
+    const getTimeFromShortestWaiting = (shortestWaiting) => {
+        const totalSeconds = Math.floor(shortestWaiting / 1000);
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        return minutes > 0 ? `${minutes}m ${seconds}s` : `${seconds}s`;
+    };
+
+    const renderLandTable = (data) => {
+        const tableContainer = document.getElementById('landTableContainer');
+        if (!tableContainer) return;
+
+        const container = document.getElementById('minebtn');
+        if (container) {
+            container.style.width = '500px'; // Expand to match table width
+        }
+
+        const now = Date.now();
+        currentLands = (data?.[0]?.public?.filter(land =>
+            land.shortestWaiting > 0 && !BLACKLIST_LAND_IDS.includes(land.landName.replace('pixelsNFTFarm-', ''))
+        ) || []).slice(0, 50).map(land => ({
+            landName: land.landName,
+            numberOfEntities: land.numberOfEntities,
+            numberOfAvailableEntities: land.numberOfAvailableEntities,
+            shortestWaiting: land.shortestWaiting,
+            startTime: now
+        }));
+
+        const table = document.createElement('table');
+        Object.assign(table.style, { width: '100%', borderCollapse: 'collapse', color: 'white', fontSize: '16px' });
+        table.innerHTML = `
+            <thead>
+                <tr style="background: #333;">
+                    <th style="padding: 6px; border: 1px solid #444;">Land</th>
+                    <th style="padding: 6px; border: 1px solid #444;">Available|Total Entities</th>
+                    <th style="padding: 6px; border: 1px solid #444;">Shortest Waiting</th>
+                </tr>
+            </thead>
+        `;
+        updateLandTable(table);
+        tableContainer.innerHTML = '';
+        tableContainer.appendChild(table);
+
+        if (currentLands.length && !updateInterval) {
+            updateInterval = setInterval(() => updateLandTable(table), 1000);
+        }
+    };
+
+    const updateLandTable = (table) => {
+        const tbody = document.createElement('tbody');
+        const now = Date.now();
+        currentLands = currentLands.filter(land => (now - land.startTime) < land.shortestWaiting);
+
+        if (currentLands.length) {
+            currentLands.forEach(land => {
+                const remaining = Math.max(0, land.shortestWaiting - (now - land.startTime));
+                const cleanLandName = land.landName.replace('pixelsNFTFarm-', '');
+                tbody.innerHTML += `
+                    <tr>
+                        <td style="padding: 0px; border: 1px solid #444; text-align: left;">
+                            <button style="background: #007bff; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; width: 100%; transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease;"
+                                    onmouseenter="this.style.transform='scale(1.03)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)'"
+                                    onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='none'"
+                                    onmousedown="this.style.transform='scale(0.97)'"
+                                    onmouseup="this.style.transform='scale(1.03)'"
+                                    onfocus="this.style.outline='2px solid #fff'"
+                                    onblur="this.style.outline='none'"
+                                    onclick="window.setInputValue('${cleanLandName}')">Land ${cleanLandName}</button>
+                        </td>
+                        <td style="padding: 6px; border: 1px solid #444; text-align: center;">${land.numberOfAvailableEntities}|${land.numberOfEntities}</td>
+                        <td style="padding: 6px; border: 1px solid #444; text-align: center;">${getTimeFromShortestWaiting(remaining)}</td>
+                    </tr>
+                `;
+            });
+        } else {
+            tbody.innerHTML = `<tr><td colspan="3" style="padding: 6px; border: 1px solid #444; text-align: center;">No data available</td></tr>`;
+        }
+
+        const oldTbody = table.querySelector('tbody');
+        if (oldTbody) table.replaceChild(tbody, oldTbody);
+        else table.appendChild(tbody);
+
+        if (!currentLands.length && updateInterval) {
+            clearInterval(updateInterval);
+            updateInterval = null;
+        }
+    };
+
+    const clearTable = () => {
+        const tableContainer = document.getElementById('landTableContainer');
+        const container = document.getElementById('minebtn');
+        if (tableContainer) tableContainer.innerHTML = '';
+        if (container) container.style.width = '150px'; // Revert to default width
+        currentLands = [];
+        if (updateInterval) {
+            clearInterval(updateInterval);
+            updateInterval = null;
+        }
+    };
+
+    // API and Data Processing
+    const decodeTimers = (base64Str) => {
+        try {
+            const bytes = Uint8Array.from(atob(base64Str), c => c.charCodeAt(0));
+            return JSON.parse(pako.inflate(bytes, { to: 'string' }));
+        } catch (error) {
+            //console.error('Error decoding timers:', error);
+            return null;
+        }
+    };
+
+    const filterMineTimers = (timersData) => {
+        try {
+            const now = Date.now();
+            const usedMapId = localStorage.getItem('lastUsedMapId');
+            const filteredTimers = timersData.filter(timer =>
+                timer.entity?.startsWith('ent_mine') && timer.mapId && !timer.mapId.startsWith('shareRent') && timer.endTime < now
+            );
+
+            if (!filteredTimers.length) return '';
+            const chosenTimer = filteredTimers.find(t => t.mapId !== usedMapId) || filteredTimers[Math.floor(Math.random() * filteredTimers.length)];
+            const cleanMapId = chosenTimer.mapId.replace('pixelsNFTFarm-', '');
+            localStorage.setItem('lastUsedMapId', chosenTimer.mapId);
+            return cleanMapId;
+        } catch (error) {
+            //console.error('Error filtering timers:', error);
+            return '';
+        }
+    };
+
+    const processEntMineData = (data) => {
+        if (!data?.[0]?.public?.length) return;
+        renderLandTable(data);
+    };
+
+    const setInputValue = (farmLand) => {
+        const input = document.querySelector('.LandAndTravel_numberInput__Re9sf');
+        const triggerBox = document.querySelector('.LandAndTravel_option__P_QSA');
+        if (!input || !triggerBox) return;
+
+        setTimeout(() => {
+            triggerBox.click();
+            input.focus();
+            input.click();
+            Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set.call(input, farmLand);
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+
+            setTimeout(() => {
+                if (input.value === farmLand) {
+                    const confirmButton = document.querySelector('.LandAndTravel_optionButtons__5tDIJ button');
+                    if (confirmButton) {
+                        confirmButton.click();
+                        clearTable();
+                    }
+                }
+            }, 500);
+        }, 500);
+    };
+    WINDOW.setInputValue = setInputValue;
+
+    const fetchTimers = async () => {
+        if (!featureOneEnabled) return;
+        const pid = WINDOW.pga?.helpers?.getReduxValue()?.game?.player?.core?.mid || '';
+        try {
+            const res = await fetch('https://api-pixels.guildpal.com/stats-api/timers/gettimers', {
+                method: 'GET',
+                headers: { 'x-atomrigs-pga-pid': pid, 'x-atomrigs-pga-version': '1.1.4' }
+            });
+            const data = await res.json();
+            if (data?.data?.timers) {
+                const decoded = decodeTimers(data.data.timers);
+                if (decoded) setInputValue(filterMineTimers(decoded));
+            }
+        } catch (err) {
+            //console.error('Fetch timers failed:', err);
+        }
+    };
+
+    const fetchEntMine = async () => {
+        if (!featureTwoEnabled) return;
+        try {
+            const res = await fetch('https://industry.guildpal.com/v2/entities/ent_mine_04?landtypes=space&count=5&includeHouse=false');
+            const data = await res.json();
+            processEntMineData(data);
+        } catch (err) {
+            //console.error('Fetch ent_mine failed:', err);
+        }
+    };
+
+    // Observer Setup
+    const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            for (const node of mutation.addedNodes) {
+                if (node.nodeType === 1 && node.querySelector('.LandAndTravel_numberInput__Re9sf')) {
+                    if (featureOneEnabled) fetchTimers();
+                    if (featureTwoEnabled) fetchEntMine();
+                }
+            }
+            for (const node of mutation.removedNodes) {
+                if (node.nodeType === 1 && node.querySelector('.LandAndTravel_numberInput__Re9sf') && featureTwoEnabled) {
+                    clearTable();
+                }
+            }
+        }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+    window.addEventListener('load', createToggleUI);
+    createToggleButton();
+    observeForTaskPanel();
+})();
