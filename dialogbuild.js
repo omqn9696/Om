@@ -231,7 +231,7 @@
         if (container) {
             container.style.width = '500px'; // Expand to match table width
         }
-
+        BLACKLIST_LAND_IDS = window.localStorage.getItem("blacklistLand");
         const now = Date.now();
         currentLands = (data?.[0]?.public?.filter(land =>
             land.shortestWaiting > 0 && !BLACKLIST_LAND_IDS.includes(land.landName.replace('pixelsNFTFarm-', ''))
