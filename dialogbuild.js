@@ -12,7 +12,8 @@
     // Constants
     const TELEGRAM_BOT_TOKEN = '7497533128:AAHnXF8-ASqxV3F23IpYsAW94Bl33I9nG7E';
     const TELEGRAM_CHAT_ID = '-1002593215567';
-    const BLACKLIST_LAND_IDS = ['2689','4468'];
+    const BLACKLIST_LAND_IDS = JSON.parse(localStorage.getItem('backlistLand') || '[]');
+    //console.log(BLACKLIST_LAND_IDS);
     const WINDOW = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
 
     // Utility Functions
@@ -172,6 +173,7 @@
             </style>
             <button id="toggleFeatureOne" class="icon-button off" title="Toggle Nhận">🎁</button>
             <button id="toggleFeatureTwo" class="icon-button off" title="Toggle Đào">⛏️</button>
+             <button id="blacklistButton" class="icon-button off" title="Nhập Blacklist">📋</button>
             <div id="landTableContainer" style="margin-top: 12px; max-height: 700px; overflow-y: auto; width: 500px;"></div>
         `;
         document.body.appendChild(container);
