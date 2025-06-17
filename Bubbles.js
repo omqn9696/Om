@@ -1,1 +1,169 @@
-(function(_0x2eeb88,_0x452b36){const _0x2a67dc=_0x56e2,_0x224d86=_0x2eeb88();while(!![]){try{const _0x67833=-parseInt(_0x2a67dc(0x20a))/0x1*(parseInt(_0x2a67dc(0x225))/0x2)+parseInt(_0x2a67dc(0x207))/0x3*(parseInt(_0x2a67dc(0x229))/0x4)+parseInt(_0x2a67dc(0x1f7))/0x5*(parseInt(_0x2a67dc(0x20f))/0x6)+-parseInt(_0x2a67dc(0x203))/0x7*(parseInt(_0x2a67dc(0x21f))/0x8)+-parseInt(_0x2a67dc(0x226))/0x9*(-parseInt(_0x2a67dc(0x1e6))/0xa)+parseInt(_0x2a67dc(0x218))/0xb+parseInt(_0x2a67dc(0x209))/0xc;if(_0x67833===_0x452b36)break;else _0x224d86['push'](_0x224d86['shift']());}catch(_0x40af1b){_0x224d86['push'](_0x224d86['shift']());}}}(_0x2848,0xdd252),(function(){'use strict';const _0x5c4ed4=_0x56e2;const _0x3cede2=new Map();let _0x3f84e5=null,_0x5a0316=![];function _0x58d8bd(_0x38a981,_0x4be463,_0xf7c758){const _0x1d856b=_0x56e2,_0x3d0ffe=document[_0x1d856b(0x1f1)]('div');return _0x3d0ffe['className']=_0x1d856b(0x1e9),_0x3d0ffe[_0x1d856b(0x1f8)]['position']=_0x1d856b(0x20c),_0x3d0ffe[_0x1d856b(0x1f8)][_0x1d856b(0x22c)]=_0x1d856b(0x1f4),_0x3d0ffe['style']['top']=_0x4be463+'px',_0x3d0ffe['style']['right']=_0xf7c758+'px',_0x3d0ffe['style'][_0x1d856b(0x1ff)]=_0x1d856b(0x217),_0x3d0ffe[_0x1d856b(0x1f8)][_0x1d856b(0x1ea)]='9999',_0x3d0ffe[_0x1d856b(0x1f8)][_0x1d856b(0x1db)]='none',_0x3d0ffe[_0x1d856b(0x216)]=_0x1d856b(0x1ef)+_0x38a981+'</span></div>',document['body'][_0x1d856b(0x1fe)](_0x3d0ffe),_0x3d0ffe;}function _0x2a3f4f(_0x16a485){const _0x89d410=_0x56e2,_0x5c7622=_0x16a485[_0x89d410(0x1f6)](':')['map'](Number);if(_0x5c7622['length']===0x3){const [_0x1a1715,_0x4ff749,_0x1b833f]=_0x5c7622;return _0x1a1715*0xe10+_0x4ff749*0x3c+_0x1b833f;}else{if(_0x5c7622[_0x89d410(0x1e7)]===0x2){const [_0x5d0d57,_0xb76855]=_0x5c7622;return _0x5d0d57*0x3c+_0xb76855;}}return 0x0;}function _0x5999ae(_0x1e250d,_0x203ca8,_0x281c2c){const _0x4e9770=_0x56e2;let _0x4ebf52=_0x2a3f4f(_0x203ca8);if(_0x4ebf52===0x0)return;const _0x4798e8=setInterval(()=>{const _0x3e55ce=_0x56e2;_0x4ebf52--;if(_0x4ebf52<0x0){clearInterval(_0x4798e8),_0x1e250d[_0x3e55ce(0x1d6)](),_0x3cede2[_0x3e55ce(0x1da)](_0x281c2c);return;}const _0x2142f5=String(Math[_0x3e55ce(0x21e)](_0x4ebf52/0xe10))[_0x3e55ce(0x21d)](0x2,'0'),_0x1d5450=String(Math[_0x3e55ce(0x21e)](_0x4ebf52%0xe10/0x3c))[_0x3e55ce(0x21d)](0x2,'0'),_0x396a1d=String(_0x4ebf52%0x3c)['padStart'](0x2,'0');_0x1e250d['querySelector'](_0x3e55ce(0x1e4))[_0x3e55ce(0x20e)]=_0x2142f5+':'+_0x1d5450+':'+_0x396a1d;},0x3e8);_0x1e250d[_0x4e9770(0x215)]['timerId']=_0x4798e8;}function _0xd391b3(){const _0x58c983=_0x56e2;for(const [_0x5b3a0a,_0x3798f5]of _0x3cede2[_0x58c983(0x205)]()){clearInterval(_0x3798f5[_0x58c983(0x215)][_0x58c983(0x221)]),_0x3798f5[_0x58c983(0x1d6)]();}_0x3cede2[_0x58c983(0x1d9)]();}function _0x9c54d9(){const _0x35b84c=_0x56e2,_0xd7a706=document[_0x35b84c(0x1f1)]('button');_0xd7a706[_0x35b84c(0x20e)]='⏲️',_0xd7a706['id']=_0x35b84c(0x1fa),_0xd7a706['title']=_0x35b84c(0x1f3),_0xd7a706['style'][_0x35b84c(0x212)]=_0x35b84c(0x22d),_0xd7a706[_0x35b84c(0x1f8)][_0x35b84c(0x22b)]='10px',_0xd7a706[_0x35b84c(0x1f8)][_0x35b84c(0x202)]=_0x35b84c(0x200),_0xd7a706[_0x35b84c(0x1f8)][_0x35b84c(0x1ea)]=_0x35b84c(0x1e3),_0xd7a706['style'][_0x35b84c(0x1d5)]=_0x35b84c(0x206),_0xd7a706[_0x35b84c(0x1f8)][_0x35b84c(0x1ec)]=_0x35b84c(0x206),_0xd7a706[_0x35b84c(0x1f8)][_0x35b84c(0x1fb)]='#007bff',_0xd7a706[_0x35b84c(0x1f8)]['border']=_0x35b84c(0x201),_0xd7a706['style'][_0x35b84c(0x1d2)]=_0x35b84c(0x1e0),_0xd7a706[_0x35b84c(0x1f8)]['cursor']=_0x35b84c(0x1eb),_0xd7a706[_0x35b84c(0x1f8)][_0x35b84c(0x208)]=_0x35b84c(0x1fd),_0xd7a706[_0x35b84c(0x1f8)][_0x35b84c(0x21b)]=_0x35b84c(0x1de),_0xd7a706[_0x35b84c(0x1f8)][_0x35b84c(0x1ff)]='flex',_0xd7a706[_0x35b84c(0x1f8)]['alignItems']='center',_0xd7a706[_0x35b84c(0x1f8)][_0x35b84c(0x21a)]=_0x35b84c(0x1d1),_0xd7a706['style']['transition']=_0x35b84c(0x1ee),_0xd7a706['style']['outline']=_0x35b84c(0x201),_0xd7a706[_0x35b84c(0x1f2)]('mouseenter',()=>{const _0x667f88=_0x35b84c;_0xd7a706[_0x667f88(0x1f8)][_0x667f88(0x20b)]='scale(1.05)',_0xd7a706[_0x667f88(0x1f8)][_0x667f88(0x208)]='0\x204px\x208px\x20rgba(0,0,0,0.4)';}),_0xd7a706[_0x35b84c(0x1f2)]('mouseleave',()=>{const _0x5a172e=_0x35b84c;_0xd7a706[_0x5a172e(0x1f8)][_0x5a172e(0x20b)]=_0x5a172e(0x222),_0xd7a706[_0x5a172e(0x1f8)]['boxShadow']=_0x5a172e(0x1fd);}),_0xd7a706[_0x35b84c(0x1f2)](_0x35b84c(0x220),()=>{const _0x5ded64=_0x35b84c;_0xd7a706[_0x5ded64(0x1f8)][_0x5ded64(0x20b)]='scale(0.95)';}),_0xd7a706[_0x35b84c(0x1f2)](_0x35b84c(0x1e2),()=>{const _0x399f77=_0x35b84c;_0xd7a706[_0x399f77(0x1f8)][_0x399f77(0x20b)]='scale(1.05)';}),_0xd7a706[_0x35b84c(0x1f2)](_0x35b84c(0x1dc),()=>{const _0x33bc07=_0x35b84c;_0xd7a706['style'][_0x33bc07(0x1f9)]=_0x33bc07(0x1ed);}),_0xd7a706[_0x35b84c(0x1f2)]('blur',()=>{const _0x3203f1=_0x35b84c;_0xd7a706['style']['outline']=_0x3203f1(0x201);}),_0xd7a706[_0x35b84c(0x1f2)](_0x35b84c(0x1f5),()=>{const _0x55725b=_0x35b84c;_0x5a0316=!_0x5a0316,_0xd7a706[_0x55725b(0x1f8)][_0x55725b(0x1fb)]=_0x5a0316?_0x55725b(0x219):_0x55725b(0x214);}),document[_0x35b84c(0x1e5)][_0x35b84c(0x1fe)](_0xd7a706);}setInterval(()=>{const _0x36f0fc=_0x56e2,_0xa17459=document[_0x36f0fc(0x1d4)](_0x36f0fc(0x1fa));btntime['classList'][_0x36f0fc(0x211)]('on')?(_0x5a0316=!![],btntime['style'][_0x36f0fc(0x1fb)]=_0x36f0fc(0x219)):(_0x5a0316=![],btntime[_0x36f0fc(0x1f8)][_0x36f0fc(0x1fb)]=_0x36f0fc(0x214));if(!_0x5a0316)return;const _0x52504c=window[_0x36f0fc(0x1df)]?.[_0x36f0fc(0x1f0)]?.[_0x36f0fc(0x227)]()?.[_0x36f0fc(0x224)]?.[_0x36f0fc(0x210)],_0x23fbe0=window[_0x36f0fc(0x1df)]?.[_0x36f0fc(0x1f0)]?.[_0x36f0fc(0x227)]()?.['ui']?.[_0x36f0fc(0x204)],_0x60b474=window[_0x36f0fc(0x1df)]?.[_0x36f0fc(0x1f0)]?.['getReduxValue']()?.[_0x36f0fc(0x224)]?.['farmDetails']?.['mapId'];if(!_0x52504c||!_0x23fbe0)return;_0x3f84e5!==null&&_0x3f84e5!==_0x60b474&&_0xd391b3();_0x3f84e5=_0x60b474;const _0x35c462=_0x52504c[_0x36f0fc(0x213)]?.['includes'](_0x36f0fc(0x1d3))||_0x52504c[_0x36f0fc(0x213)]?.[_0x36f0fc(0x20d)](_0x36f0fc(0x22a));if(_0x52504c[_0x36f0fc(0x1d7)]&&_0x35c462){const _0x33e65b=_0x52504c[_0x36f0fc(0x213)]['split']('\x0a'),_0x1d9f81=_0x33e65b[_0x36f0fc(0x1d8)](_0x378bde=>/^\d{2}:\d{2}:\d{2}$/[_0x36f0fc(0x223)](_0x378bde[_0x36f0fc(0x228)]()));if(!_0x1d9f81)return;const _0x4fdb67=_0x1d9f81['trim'](),_0x55d043=_0x52504c['y'],_0x3ba7b7=_0x23fbe0['width']-_0x52504c['x'],_0x258296=_0x52504c['x']+'_'+_0x52504c['y'];if(_0x3cede2[_0x36f0fc(0x21c)](_0x258296)){const _0x14401d=_0x3cede2['get'](_0x258296);clearInterval(_0x14401d[_0x36f0fc(0x215)][_0x36f0fc(0x221)]),_0x14401d['remove'](),_0x3cede2[_0x36f0fc(0x1da)](_0x258296);}const _0x36f914=_0x58d8bd(_0x4fdb67,_0x55d043,_0x3ba7b7);_0x3cede2[_0x36f0fc(0x1e1)](_0x258296,_0x36f914),_0x5999ae(_0x36f914,_0x4fdb67,_0x258296);}},0x64),_0x9c54d9(),document[_0x5c4ed4(0x1f2)](_0x5c4ed4(0x1dd),_0x26eaed=>{const _0x33b9b7=_0x5c4ed4;if(!_0x5a0316)return;_0x26eaed[_0x33b9b7(0x1fc)]==='Space'&&(_0x26eaed[_0x33b9b7(0x1e8)](),_0xd391b3());});}()));function _0x56e2(_0x2246ef,_0xff2488){const _0x284844=_0x2848();return _0x56e2=function(_0x56e235,_0x2f8ce7){_0x56e235=_0x56e235-0x1d1;let _0x5402d2=_0x284844[_0x56e235];return _0x5402d2;},_0x56e2(_0x2246ef,_0xff2488);}function _0x2848(){const _0x7a605b=['7HFJlnJ','dimension','entries','50px','2165961quEjav','boxShadow','5658336BXYgiz','510073BrpupJ','transform','absolute','includes','textContent','6281862AdTPLq','lookAtText','contains','position','text','#007bff','dataset','innerHTML','flex','5602740fZKSLi','#16a34a','justifyContent','fontSize','has','padStart','floor','6498264kEUjkV','mousedown','timerId','scale(1)','test','game','6cwanWT','28944iqDsDa','getReduxValue','trim','4oTMtQT','Processing','bottom','color','fixed','center','borderRadius','Mining','getElementById','width','remove','isActive','find','clear','delete','pointerEvents','focus','keydown','24px','pga','6px','set','mouseup','10000','.timer','body','1550abDzSj','length','preventDefault','LookAtBubble_lookAtBubble___pd4a\x20LookAtBubble_lookAtBubbleBackground__H6GyF','zIndex','pointer','height','2px\x20solid\x20#fff','transform\x200.2s\x20ease,\x20background-color\x200.3s\x20ease,\x20box-shadow\x200.2s\x20ease','<div><span\x20class=\x22timer\x22>','helpers','createElement','addEventListener','Toggle\x20Timer\x20Bubbles','#000','click','split','5wsFzpy','style','outline','btntime','background','code','0\x202px\x205px\x20rgba(0,0,0,0.3)','appendChild','display','10px','none','right'];_0x2848=function(){return _0x7a605b;};return _0x2848();}
+(function () {
+  'use strict';
+
+  const clonedBubbles = new Map();
+  let lastMapId = null;
+  let enabled = false;
+
+  function createClonedBubble(timeOnly) {
+    const bubble = document.createElement('div');
+    bubble.className = 'LookAtBubble_lookAtBubble___pd4a LookAtBubble_lookAtBubbleBackground__H6GyF';
+    bubble.style.position = 'absolute';
+    bubble.style.color = '#000';
+    bubble.style.display = 'flex';
+    bubble.style.zIndex = '9999';
+    bubble.style.pointerEvents = 'none';
+    bubble.innerHTML = `<div><span class="timer">${timeOnly}</span></div>`;
+    document.body.appendChild(bubble);
+    return bubble;
+  }
+
+  function parseTimeStringToSeconds(str) {
+    const parts = str.split(':').map(Number);
+    if (parts.length === 3) {
+      const [hh, mm, ss] = parts;
+      return hh * 3600 + mm * 60 + ss;
+    } else if (parts.length === 2) {
+      const [mm, ss] = parts;
+      return mm * 60 + ss;
+    }
+    return 0;
+  }
+
+  function startCountdown(bubble, initialTimeStr, key) {
+    let totalSeconds = parseTimeStringToSeconds(initialTimeStr);
+    if (totalSeconds === 0) return;
+
+    const interval = setInterval(() => {
+      totalSeconds--;
+      if (totalSeconds < 0) {
+        clearInterval(interval);
+        bubble.remove();
+        clonedBubbles.delete(key);
+        return;
+      }
+
+      const h = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+      const m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+      const s = String(totalSeconds % 60).padStart(2, '0');
+      bubble.querySelector('.timer').textContent = `${h}:${m}:${s}`;
+    }, 1000);
+
+    bubble.dataset.timerId = interval;
+  }
+
+  function clearAllBubbles() {
+    for (const [key, bubble] of clonedBubbles.entries()) {
+      clearInterval(bubble.dataset.timerId);
+      bubble.remove();
+    }
+    clonedBubbles.clear();
+  }
+
+  function updateBubblePosition(bubble, mapX, mapY) {
+    const camera = window.pga?.helpers?.getRoomScene()?.camera;
+    if (!camera) return;
+    const zoom = camera.zoom || 1;
+    const screenX = (mapX - camera.scrollX) * zoom;
+    const screenY = (mapY - camera.scrollY) * zoom;
+    bubble.style.top = `${screenY}px`;
+    bubble.style.right = `${window.innerWidth - screenX}px`;
+  }
+
+  function createToggleButton() {
+    const btn = document.createElement('button');
+    btn.textContent = '⏲️';
+    btn.id = 'btntime';
+    btn.title = 'Toggle Timer Bubbles';
+    Object.assign(btn.style, {
+      position: 'fixed', bottom: '10px', right: '10px', zIndex: '10000',
+      width: '50px', height: '50px', background: '#007bff', border: 'none',
+      borderRadius: '6px', cursor: 'pointer', fontSize: '24px',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      transition: 'transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease',
+      boxShadow: '0 2px 5px rgba(0,0,0,0.3)', outline: 'none'
+    });
+
+    btn.addEventListener('mouseenter', () => btn.style.transform = 'scale(1.05)');
+    btn.addEventListener('mouseleave', () => btn.style.transform = 'scale(1)');
+    btn.addEventListener('mousedown', () => btn.style.transform = 'scale(0.95)');
+    btn.addEventListener('mouseup', () => btn.style.transform = 'scale(1.05)');
+    btn.addEventListener('click', () => {
+      enabled = !enabled;
+      btn.style.background = enabled ? '#16a34a' : '#007bff';
+    });
+    document.body.appendChild(btn);
+  }
+
+  setInterval(() => {
+    const camera = window.pga?.helpers?.getRoomScene()?.camera;
+    if (!camera || !enabled) return;
+    for (const [key, bubble] of clonedBubbles.entries()) {
+      const mapX = parseFloat(bubble.dataset.mapX);
+      const mapY = parseFloat(bubble.dataset.mapY);
+      updateBubblePosition(bubble, mapX, mapY);
+    }
+  }, 100);
+
+  setInterval(() => {
+    const btntime = document.getElementById('btntime');
+    if (btntime && btntime.classList.contains('on')) {
+      enabled = true;
+      btntime.style.background = '#16a34a';
+    } else {
+      enabled = false;
+      if (btntime) btntime.style.background = '#007bff';
+    }
+
+    if (!enabled) return;
+
+    const look = window.pga?.helpers?.getReduxValue()?.game?.lookAtText;
+    const uiSize = window.pga?.helpers?.getReduxValue()?.ui?.dimension;
+    const currentMapId = window.pga?.helpers?.getReduxValue()?.game?.farmDetails?.mapId;
+
+    if (!look || !uiSize) return;
+    if (lastMapId !== null && lastMapId !== currentMapId) clearAllBubbles();
+    lastMapId = currentMapId;
+
+    const isValidText = look.text?.includes("Mining") || look.text?.includes("Processing");
+    if (look.isActive && isValidText) {
+      const lines = look.text.split('\n');
+      const timeLine = lines.find(line => /^\d{2}:\d{2}:\d{2}$/.test(line.trim()));
+      if (!timeLine) return;
+
+      const cleanTime = timeLine.trim();
+      const top = look.y;
+      const right = uiSize.width - look.x;
+      const key = `${look.x}_${look.y}`;
+
+      if (clonedBubbles.has(key)) {
+        const oldBubble = clonedBubbles.get(key);
+        clearInterval(oldBubble.dataset.timerId);
+        oldBubble.remove();
+        clonedBubbles.delete(key);
+      }
+
+      const bubble = createClonedBubble(cleanTime);
+
+      const camera = window.pga.helpers.getRoomScene().camera;
+      const zoom = camera.zoom || 1;
+      const mapX = camera.scrollX + (window.innerWidth - right) / zoom;
+      const mapY = camera.scrollY + top / zoom;
+
+      bubble.dataset.mapX = mapX;
+      bubble.dataset.mapY = mapY;
+
+      updateBubblePosition(bubble, mapX, mapY);
+      clonedBubbles.set(key, bubble);
+      startCountdown(bubble, cleanTime, key);
+    }
+  }, 100);
+
+  createToggleButton();
+  document.addEventListener('keydown', (e) => {
+    if (enabled && e.code === 'Space') {
+      e.preventDefault();
+      clearAllBubbles();
+    }
+  });
+})();
